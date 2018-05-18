@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Algorithoms.iml" filepath="$PROJECT_DIR$/Algorithoms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comxjtu/comxjtu.iml" filepath="$PROJECT_DIR$/comxjtu/comxjtu.iml" />
     </modules>
   </component>
 </project>
