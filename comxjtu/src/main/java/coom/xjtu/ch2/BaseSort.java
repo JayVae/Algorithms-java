@@ -1,7 +1,5 @@
 package coom.xjtu.ch2;
 
-import java.util.Comparator;
-
 /**
  * @Author: Jay
  * @Date: Created in 16:15 2018/5/18
@@ -9,7 +7,7 @@ import java.util.Comparator;
  */
 public abstract class BaseSort{
 
-    public static void sort(Comparator[] a){
+    public static void sort(Comparable[] a){
 
     }
 
