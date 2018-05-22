@@ -2,27 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="861de4a9-ab3c-4d88-b608-cdd68707e804" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/HeapSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/MaxPQ.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/target/classes/com/xjtu/ch1/Evaluate.class" afterPath="$PROJECT_DIR$/comxjtu/target/classes/com/xjtu/ch1/Evaluate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/target/classes/com/xjtu/ch1/ResizingArrayStack$1.class" afterPath="$PROJECT_DIR$/comxjtu/target/classes/com/xjtu/ch1/ResizingArrayStack$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/target/classes/com/xjtu/ch1/ResizingArrayStack$ListIterator.class" afterPath="$PROJECT_DIR$/comxjtu/target/classes/com/xjtu/ch1/ResizingArrayStack$ListIterator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/target/classes/com/xjtu/ch1/ResizingArrayStack.class" afterPath="$PROJECT_DIR$/comxjtu/target/classes/com/xjtu/ch1/ResizingArrayStack.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/target/classes/com/xjtu/ch1/Stack$1.class" afterPath="$PROJECT_DIR$/comxjtu/target/classes/com/xjtu/ch1/Stack$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/target/classes/com/xjtu/ch1/Stack$ListIterator.class" afterPath="$PROJECT_DIR$/comxjtu/target/classes/com/xjtu/ch1/Stack$ListIterator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/target/classes/com/xjtu/ch1/Stack$Node.class" afterPath="$PROJECT_DIR$/comxjtu/target/classes/com/xjtu/ch1/Stack$Node.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/target/classes/com/xjtu/ch1/Stack.class" afterPath="$PROJECT_DIR$/comxjtu/target/classes/com/xjtu/ch1/Stack.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/target/classes/com/xjtu/ch1/ThreeSumFast.class" afterPath="$PROJECT_DIR$/comxjtu/target/classes/com/xjtu/ch1/ThreeSumFast.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/target/classes/coom/xjtu/ch2/BaseSort.class" afterPath="$PROJECT_DIR$/comxjtu/target/classes/coom/xjtu/ch2/BaseSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/target/classes/coom/xjtu/ch2/InsertSort.class" afterPath="$PROJECT_DIR$/comxjtu/target/classes/coom/xjtu/ch2/InsertSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/target/classes/coom/xjtu/ch2/MergeBUSort.class" afterPath="$PROJECT_DIR$/comxjtu/target/classes/coom/xjtu/ch2/MergeBUSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/target/classes/coom/xjtu/ch2/MergeSort.class" afterPath="$PROJECT_DIR$/comxjtu/target/classes/coom/xjtu/ch2/MergeSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/target/classes/coom/xjtu/ch2/SelectionSort.class" afterPath="$PROJECT_DIR$/comxjtu/target/classes/coom/xjtu/ch2/SelectionSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/target/classes/coom/xjtu/ch2/ShellSort.class" afterPath="$PROJECT_DIR$/comxjtu/target/classes/coom/xjtu/ch2/ShellSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch1/BinarySearch.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/comxjtu.iml" afterPath="$PROJECT_DIR$/comxjtu/comxjtu.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/pom.xml" afterPath="$PROJECT_DIR$/comxjtu/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/BaseSort.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/BaseSort.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/HeapSort.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/HeapSort.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/InsertSort.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/InsertSort.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/MaxPQ.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/MaxPQ.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/MergeBUSort.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/MergeBUSort.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/MergeSort.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/MergeSort.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/Quick3waySort.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/Quick3waySort.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/QuickSort.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/QuickSort.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/SelectionSort.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/SelectionSort.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/ShellSort.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/ShellSort.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/comxjtu/target/" />
@@ -38,7 +29,7 @@
       <file leaf-file-name="ResizingArrayStack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch1/ResizingArrayStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
+            <state relative-caret-position="-343">
               <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="29" />
               <folding />
             </state>
@@ -46,7 +37,7 @@
         </entry>
       </file>
       <file leaf-file-name="BaseSort.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/BaseSort.java">
+        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/BaseSort.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
               <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="29" selection-end-column="29" />
@@ -55,38 +46,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InsertSort.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/InsertSort.java">
+      <file leaf-file-name="Stack.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch1/Stack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="351">
+              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShellSort.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/ShellSort.java">
+      <file leaf-file-name="ThreeSumFast.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch1/ThreeSumFast.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="31" column="9" lean-forward="false" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MergeBUSort.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/MergeBUSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+            <state relative-caret-position="378">
+              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="MergeSort.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/MergeSort.java">
+        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/MergeSort.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="675">
               <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
@@ -96,7 +77,7 @@
         </entry>
       </file>
       <file leaf-file-name="QuickSort.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/QuickSort.java">
+        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/QuickSort.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="116">
               <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
@@ -106,39 +87,49 @@
         </entry>
       </file>
       <file leaf-file-name="MaxPQ.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/MaxPQ.java">
+        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/MaxPQ.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-47">
               <caret line="56" column="34" lean-forward="true" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
               <folding>
-                <element signature="e#306#307#0" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#388#389#0" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#463#464#0" expanded="true" />
-                <element signature="e#716#717#0" expanded="true" />
-                <element signature="e#763#764#0" expanded="true" />
+                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#387#388#0" expanded="true" />
+                <element signature="e#414#415#0" expanded="true" />
+                <element signature="e#438#439#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+                <element signature="e#762#763#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HeapSort.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/HeapSort.java">
+      <file leaf-file-name="HeapSort.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/HeapSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="621">
+              <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
               <folding>
-                <element signature="e#468#469#0" expanded="true" />
-                <element signature="e#521#522#0" expanded="true" />
+                <element signature="e#514#515#0" expanded="true" />
+                <element signature="e#567#568#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinarySearch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch1/BinarySearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Quick3waySort.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/Quick3waySort.java">
+        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/Quick3waySort.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="62">
               <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
@@ -190,6 +181,7 @@
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/Quick3waySort.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/MaxPQ.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/HeapSort.java" />
+        <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/HeapSort.java" />
       </list>
     </option>
   </component>
@@ -261,7 +253,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ch1" type="462c0819:PsiDirectoryNode" />
+              <item name="xjtu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Algorithoms" type="b2602c69:ProjectViewProjectNode" />
@@ -270,7 +262,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ch2" type="462c0819:PsiDirectoryNode" />
+              <item name="xjtu" type="462c0819:PsiDirectoryNode" />
+              <item name="ch1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -525,12 +518,12 @@
       <option name="presentableId" value="Default" />
       <updated>1526437117600</updated>
       <workItem from="1526437122139" duration="70528000" />
-      <workItem from="1526820533079" duration="18244000" />
+      <workItem from="1526820533079" duration="21559000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88772000" />
+    <option name="totallyTimeSpent" value="92087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -544,9 +537,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3161512" sideWeight="0.5107991" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36396182" sideWeight="0.49460045" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36396182" sideWeight="0.49460045" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3305489" sideWeight="0.4951404" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3305489" sideWeight="0.4951404" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25431967" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -616,7 +609,7 @@
         <state relative-caret-position="324">
           <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -656,7 +649,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/BaseSort.java">
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/BaseSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -697,21 +690,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/main/com/xjtu/ch1/ThreeSumFastTest.java" />
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch1/Stack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="e#697#698#0" expanded="false" />
-            <element signature="e#721#722#0" expanded="false" />
-            <element signature="e#775#776#0" expanded="false" />
-            <element signature="e#816#817#0" expanded="false" />
-            <element signature="e#947#948#0" expanded="false" />
-            <element signature="e#991#992#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/test/com/xjtu/ch1/ThreeSumFastTest.java" />
     <entry file="file://$PROJECT_DIR$/comxjtu/comxjtu.iml">
       <provider selected="true" editor-type-id="text-editor">
@@ -749,7 +727,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/SelectionSort.java">
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/SelectionSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="33" selection-end-column="5" />
@@ -765,17 +743,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch1/ThreeSumFast.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/InsertSort.java">
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/InsertSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="34" selection-end-column="5" />
@@ -783,7 +751,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/ShellSort.java">
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/ShellSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="31" column="9" lean-forward="false" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
@@ -799,7 +767,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/MergeBUSort.java">
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/MergeBUSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
@@ -807,7 +775,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/MergeSort.java">
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/MergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
@@ -815,7 +783,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/Quick3waySort.java">
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/Quick3waySort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
           <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
@@ -823,7 +791,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/QuickSort.java">
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/QuickSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
@@ -831,15 +799,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch1/ResizingArrayStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/BaseSort.java">
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/BaseSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="29" selection-end-column="29" />
@@ -847,31 +807,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/MaxPQ.java">
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/MaxPQ.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-47">
           <caret line="56" column="34" lean-forward="true" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
           <folding>
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/HeapSort.java">
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/HeapSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        <state relative-caret-position="621">
+          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding>
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch1/BinarySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch1/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch1/ResizingArrayStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-343">
+          <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch1/ThreeSumFast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

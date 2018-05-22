@@ -1,4 +1,4 @@
-package coom.xjtu.ch2;
+package com.xjtu.ch2;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package coom.xjtu.ch2;
+package com.xjtu.ch2;
 
 /**
  * @Author: Jay
@@ -7,16 +7,18 @@ package coom.xjtu.ch2;
  */
 
 /**
- * 堆排序：
- *  1.构造堆；
+ * 堆排序：按照降序
+ *  1.构造堆:从子堆开始构造
  *  2.堆下沉
  */
 public class HeapSort {
 
     public static void sort(Comparable[] pq) {
         int n = pq.length;
+//        构造堆
         for (int k = n/2; k >= 1; k--)
             sink(pq, k, n);
+//        堆下沉，逐个弹出最大的
         while (n > 1) {
             exch(pq, 1, n--);
             sink(pq, 1, n);
