@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="861de4a9-ab3c-4d88-b608-cdd68707e804" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch1/BinarySearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/BaseSort.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/BaseSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/HeapSort.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/HeapSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/InsertSort.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/InsertSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/MaxPQ.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/MaxPQ.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/MergeBUSort.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/MergeBUSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/MergeSort.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/MergeSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/Quick3waySort.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/Quick3waySort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/QuickSort.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/QuickSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/SelectionSort.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/SelectionSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/ShellSort.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/ShellSort.java" />
-    </list>
+    <list default="true" id="861de4a9-ab3c-4d88-b608-cdd68707e804" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/comxjtu/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,22 +43,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreeSumFast.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ThreeSumFast.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch1/ThreeSumFast.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="621">
               <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MergeSort.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/MergeSort.java">
+      <file leaf-file-name="BinarySearchST.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch3/BinarySearchST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="251">
+              <caret line="46" column="19" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+              <folding>
+                <element signature="e#391#392#0" expanded="true" />
+                <element signature="e#415#416#0" expanded="true" />
+                <element signature="e#1323#1324#0" expanded="true" />
+                <element signature="e#1352#1353#0" expanded="true" />
+                <element signature="e#1391#1392#0" expanded="true" />
+                <element signature="e#1428#1429#0" expanded="true" />
+                <element signature="e#1459#1460#0" expanded="true" />
+                <element signature="e#1491#1492#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,6 +178,7 @@
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/MaxPQ.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/HeapSort.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/HeapSort.java" />
+        <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch3/BinarySearchST.java" />
       </list>
     </option>
   </component>
@@ -254,16 +251,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="xjtu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithoms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithoms" type="462c0819:PsiDirectoryNode" />
-              <item name="comxjtu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xjtu" type="462c0819:PsiDirectoryNode" />
-              <item name="ch1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -518,12 +505,12 @@
       <option name="presentableId" value="Default" />
       <updated>1526437117600</updated>
       <workItem from="1526437122139" duration="70528000" />
-      <workItem from="1526820533079" duration="21559000" />
+      <workItem from="1526820533079" duration="25614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92087000" />
+    <option name="totallyTimeSpent" value="96142000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -861,9 +848,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch1/ThreeSumFast.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="621">
           <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch3/BinarySearchST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="46" column="19" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+          <folding>
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#1323#1324#0" expanded="true" />
+            <element signature="e#1352#1353#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+            <element signature="e#1428#1429#0" expanded="true" />
+            <element signature="e#1459#1460#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
