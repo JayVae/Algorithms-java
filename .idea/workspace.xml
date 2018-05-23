@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="861de4a9-ab3c-4d88-b608-cdd68707e804" name="Default" comment="" />
+    <list default="true" id="861de4a9-ab3c-4d88-b608-cdd68707e804" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch3/BST.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/comxjtu/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,10 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinarySearchST.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BinarySearchST.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch3/BinarySearchST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
+            <state relative-caret-position="-262">
               <caret line="46" column="19" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
               <folding>
                 <element signature="e#391#392#0" expanded="true" />
@@ -67,6 +70,27 @@
                 <element signature="e#1428#1429#0" expanded="true" />
                 <element signature="e#1459#1460#0" expanded="true" />
                 <element signature="e#1491#1492#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BST.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch3/BST.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="84" column="8" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+              <folding>
+                <element signature="e#480#481#0" expanded="true" />
+                <element signature="e#513#514#0" expanded="true" />
+                <element signature="e#638#639#0" expanded="true" />
+                <element signature="e#674#675#0" expanded="true" />
+                <element signature="e#948#949#0" expanded="true" />
+                <element signature="e#988#989#0" expanded="true" />
+                <element signature="e#1349#1350#0" expanded="true" />
+                <element signature="e#1385#1386#0" expanded="true" />
+                <element signature="e#1927#1928#0" expanded="true" />
+                <element signature="e#1948#1949#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,16 +148,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Quick3waySort.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/Quick3waySort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -179,6 +193,7 @@
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/coom/xjtu/ch2/HeapSort.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch2/HeapSort.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch3/BinarySearchST.java" />
+        <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch3/BST.java" />
       </list>
     </option>
   </component>
@@ -251,6 +266,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="xjtu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithoms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithoms" type="462c0819:PsiDirectoryNode" />
+              <item name="comxjtu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xjtu" type="462c0819:PsiDirectoryNode" />
+              <item name="ch3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -505,12 +530,12 @@
       <option name="presentableId" value="Default" />
       <updated>1526437117600</updated>
       <workItem from="1526437122139" duration="70528000" />
-      <workItem from="1526820533079" duration="25614000" />
+      <workItem from="1526820533079" duration="29270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96142000" />
+    <option name="totallyTimeSpent" value="99798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -856,7 +881,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch3/BinarySearchST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
+        <state relative-caret-position="-262">
           <caret line="46" column="19" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
           <folding>
             <element signature="e#391#392#0" expanded="true" />
@@ -867,6 +892,25 @@
             <element signature="e#1428#1429#0" expanded="true" />
             <element signature="e#1459#1460#0" expanded="true" />
             <element signature="e#1491#1492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch3/BST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="84" column="8" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+          <folding>
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1385#1386#0" expanded="true" />
+            <element signature="e#1927#1928#0" expanded="true" />
+            <element signature="e#1948#1949#0" expanded="true" />
           </folding>
         </state>
       </provider>
