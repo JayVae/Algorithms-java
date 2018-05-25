@@ -1,7 +1,5 @@
 package com.xjtu;
 
-import java.util.Arrays;
-
 /**
  * @Author: Jay
  * @Date: Created in 19:22 2018/5/24
@@ -17,14 +15,36 @@ public class Test {
         System.out.println(s1.equals(s2));
         System.out.println(s1.hashCode()==s2.hashCode());
 
-        System.out.println("abc".hashCode()=="abc".hashCode());
-        System.out.println(n1.equals(n2));
-        System.out.println(n1.hashCode()==n2.hashCode());
-        int[] arr = new int[]{1,2,3};
-        Arrays.sort(arr);
-        for (int i = 0; i < arr.length; i++) {
-            
+//        int a =9646324351;
+        String str = "-123456";
+        System.out.println(str);
+        char[] chr = str.toCharArray();
+        System.out.print(chr[0]);
+        for (int i = 0; i < chr.length; i++) {
+            System.out.print(chr[chr.length-i-1]);
         }
+        System.out.println();
+        if (chr[0]=='-'){
+            for (int i = 1; i < chr.length/2+1; i++) {
+                char tmp = chr[i];
+                chr[i] = chr[chr.length-i];
+                chr[chr.length-i] = tmp;
+            }
+        }else {
+            for (int i = 0; i < chr.length / 2; i++) {
+                char tmp = chr[i];
+                chr[i] = chr[chr.length-1-i];
+                chr[chr.length-1-i] = tmp;
+            }
+        }
+        int a=0;
+        try{
+            a = Integer.valueOf(String.valueOf(chr));
+        }catch (Exception e){
+            System.out.println(0);
+        }
+        System.out.println(a);
+
     }
 
 }

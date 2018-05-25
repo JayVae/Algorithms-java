@@ -2,8 +2,11 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/comxjtu/src/test/com/xjtu/ch1/ThreeSumFastTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/comxjtu/src/test/test/com/leetcode/Question/ThreeSumTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/comxjtu/src/test/test/com/leetcode/Question/TwoAdd2Test.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/comxjtu/src/test/test/com/leetcode/Question/TwoAddTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/comxjtu/src/test/test/com/leetcode/Question/isPalindromeTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/comxjtu/src/test/test/com/leetcode/base/InverseArrayTest.java" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
