@@ -1,8 +1,10 @@
 package test.coom.xjtu.ch2;
 
-import org.junit.Test;
-import org.junit.Before;
 import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import java.util.Random;
 
 /**
  * SelectionSort Tester.
@@ -28,8 +30,8 @@ public class SelectionSortTest {
     public void testSort() throws Exception {
         int[] a = new int[20];
         for (int i = 0; i < a.length; i++) {
-            int[i] = new Random().nextInt(100);
-            System.out.println(int[i]);
+            a[i] = new Random().nextInt(100);
+            System.out.println(a[i]);
         }
 
 //TODO: Test goes here... 
