@@ -1,5 +1,8 @@
 package com.xjtu;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * @Author: Jay
  * @Date: Created in 19:22 2018/5/24
@@ -8,10 +11,25 @@ package com.xjtu;
 public class Test {
 
     public static void main(String[] args){
-        String s1 = "abc";
-        String s2 = "abc";
+        String s1 = "";
+        String s2 = " ";
+        System.out.println(s1.isEmpty());
+        System.out.println(s2.isEmpty());
+        System.out.println('('+0);
+        System.out.println(')'+0);
+        System.out.println('['+0);
+        System.out.println(']'+0);
+        System.out.println('{'+0);
+        System.out.println('}'+0);
+        System.out.println("..........");
         Integer n1 = 10;
         Integer n2 = 10;
+        Set leftset = new HashSet<Character>();
+        leftset.add('a');
+        leftset.add('a');
+        leftset.add('a');
+        System.out.println(leftset.size());
+        System.out.println(']'-'(');
         System.out.println(s1.equals(s2));
         System.out.println(s1.hashCode()==s2.hashCode());
 
