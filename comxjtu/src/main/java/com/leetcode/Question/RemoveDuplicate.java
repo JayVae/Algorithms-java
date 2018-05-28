@@ -14,11 +14,27 @@ public class RemoveDuplicate {
 
     public int removeDuplicates(int[] nums) {
         int shift = 0;
-        for (int i = 0; i < nums.length; i++) {
+        int len = nums.length;
+        if (len==0) return 0;
+        if (len==1) return 1;
+//        boolean last = (nums[len-1]==nums[len-2]);
+        for (int i = 0; i < len-1; i++) {
             if (nums[i]==nums[i+1]){
-
+                shift++;
+            }else {
+                nums[i-shift] = nums[i];
             }
         }
-        return 0;
+        if (len>=2){
+            if (nums[len-2]==nums[len-1]){
+                nums[len-1-shift]=nums[len-1];
+            }else {
+                nums[len-1-shift]=nums[len-1];
+            }
+        }
+//        for (int i = 0; i < len-shift; i++) {
+//            System.out.println(nums[i]);
+//        }
+        return len-shift;
     }
 }
