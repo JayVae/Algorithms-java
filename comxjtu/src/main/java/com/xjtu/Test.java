@@ -1,5 +1,6 @@
 package com.xjtu;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -11,8 +12,19 @@ import java.util.Set;
 public class Test {
 
     public static void main(String[] args){
+        System.out.println("A man, a plan, a canal: Panama".replaceAll("\\W*",""));
+        int[] a1 = new int[]{54,21,73,84,60,18,62,59,89,89,41,55,27,65,94,61,12,76,35,48,0,60,84,9,28,55,4,67,86,33};
+        int[] a2 = new int[]{17,17,87,98,18,53,2,69,74,73,20,85,59,89,84,91,84,34,44,48,20,42,68,84,8,54,66,62,69,52,67,27,87,49,92,14,92,53,22,90,60,14,8,71,0,61,94,1,22,84,10,55,55,60,98,76,27,35,84,28,4,2,9,44,86,12,17,89,35,68,17,41,21,65,59,86,42,53,0,33,80,20};
+        Arrays.sort(a1);
+        Arrays.sort(a2);
+        System.out.println(Arrays.toString(a1));
+        System.out.println(Arrays.toString(a2));
+        System.out.println("[0,4,9,12,18,21,27,28,33,35,41,48,54,55,55,59,60,60,61,62,65,67,73,76,84,84,84,84,84,86,89,89,94]");
         String s1 = "";
         String s2 = " ";
+        int[] arr = new int[]{1,1,3,5,7,2};
+        System.out.println(Arrays.binarySearch(arr,7));
+        System.out.println(Arrays.toString(arr));
         System.out.println(s1.isEmpty());
         System.out.println(s2.isEmpty());
         System.out.println('('+0);

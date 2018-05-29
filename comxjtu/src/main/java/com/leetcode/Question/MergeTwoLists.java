@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class MergeTwoLists {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        if (l1==null)
+        if (l1==null )
             return sortList(l2,null);
         else if (l2==null)
             return sortList(l1,null);
@@ -26,31 +26,33 @@ public class MergeTwoLists {
 
     public ListNode sortList(ListNode l1,ListNode l2){
         if (l1==null) return null;
+        else if (l2==null) return l1;
         List<Integer> list1 = new LinkedList();
         ListNode l = l1;
         list1.add(l1.val);
-//        用于每次推进
-        ListNode tmp =
-        while (l1.next!=null){
-            l1 = l1.next;
-            list1.add(l1.val);
+        ListNode tmp = l1;
+        while (tmp.next!=null){
+            tmp = tmp.next;
+            list1.add(tmp.val);
         }
+        tmp.next = l2;
         int len1 = list1.size();
-        l1.next=l2;
+        ListNode tmp2 = l2;
         list1.add(l2.val);
-        while (l2.next!=null){
-            l2 = l2.next;
-            list1.add(l2.val);
+        while (tmp2.next!=null){
+            tmp2 = tmp2.next;
+            list1.add(tmp2.val);
         }
         Collections.sort(list1);
+
         l.val=list1.get(0);
         int i=1;
-        while (l.next!=null){
-            l = l.next;
-            l.val = list1.get(i);
+        ListNode tmp3 = l;
+        while (tmp3.next!=null){
+            tmp3 = tmp3.next;
+            tmp3.val = list1.get(i);
             i++;
         }
-        while (l)
         return l;
 
     }
