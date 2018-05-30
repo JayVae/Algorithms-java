@@ -95,4 +95,129 @@ public class Strings {
         }
         return true;
     }
+
+    /**
+     *
+     * @param str
+     * @return
+     */
+    public int myAtoi(String str) {
+        if (str==null || str.isEmpty()) return 0;
+        String strr = str.trim();
+        if (strr.length()==0 ) return 0;
+        if (strr.charAt(0)=='-'){
+            if (strr.length()==1) return 0;
+            if (strr.charAt(1)>=48 && strr.charAt(1)< 58){
+                strr = strr.substring(1).replaceAll("\\D+","A");
+                if (strr.contains("A")){
+                    strr = strr.substring(0,strr.indexOf('A'));
+                }else {
+
+                }
+                strr = "-"+strr;
+                int ans = Integer.MIN_VALUE;
+                try {
+                    ans = Integer.valueOf(strr);
+                }catch (Exception e){
+                    ans = Integer.MIN_VALUE;
+                    return ans;
+                }
+                return ans;
+            }
+        }else if (strr.charAt(0)>=48 && strr.charAt(0)< 58){
+            strr = strr.replaceAll("\\D+","A");
+            if (strr.contains("A")){
+                strr = strr.substring(0,strr.indexOf('A'));
+            }else {
+
+            }
+            int ans = Integer.MAX_VALUE;
+            try {
+                ans = Integer.valueOf(strr);
+            }catch (Exception e){
+                ans = Integer.MAX_VALUE;
+                return ans;
+            }
+            return ans;
+        }else if(strr.charAt(0)=='+'){
+            if (strr.length()==1) return 0;
+            if (strr.charAt(1)>=48 && strr.charAt(1)< 58){
+                strr = strr.substring(1).replaceAll("\\D+","A");
+                if (strr.contains("A")){
+                    strr = strr.substring(0,strr.indexOf('A'));
+                }else {
+
+                }
+                int ans = Integer.MAX_VALUE;
+                try {
+                    ans = Integer.valueOf(strr);
+                }catch (Exception e){
+                    ans = Integer.MAX_VALUE;
+                    return ans;
+                }
+                return ans;
+            }
+        } else {
+            return 0;
+        }
+        return 0;
+    }
+
+    /**
+     * 给定一个 haystack 字符串和一个 needle 字符串，在 haystack 字符串中找出 needle 字符串出现的第一个位置 (从0开始)。如果不存在，则返回  -1。
+     * @param haystack
+     * @param needle
+     * @return
+     */
+    public int strStr(String haystack, String needle) {
+        if (haystack==null || needle==null) return -1;
+        if (haystack.isEmpty() && !needle.isEmpty()) return -1;
+        if (needle.isEmpty()) return 0;
+        if (haystack.length()<needle.length()) return -1;
+        char[] chars1 = haystack.toCharArray();
+        char[] chars2 = needle.toCharArray();
+        int ans = -1;
+        int j=0;
+        for (int i = 0; i < chars1.length; i++) {
+            if (chars1[i]==chars2[j]){
+                if (j==0) ans=i;
+                j++;
+                if (j==chars2.length) return ans;
+            }else {
+                if (ans!=-1) i=ans;
+                j=0;
+                ans=-1;
+            }
+        }
+        return -1;
+    }
+
+    /**
+     * 编写一个函数来查找字符串数组中的最长公共前缀。
+     如果不存在公共前缀，返回空字符串 ""。
+     * @param strs
+     * @return
+     */
+    public String longestCommonPrefix(String[] strs) {
+        if (strs==null || strs.length==0) return "";
+        if (strs.length==1) return strs[0];
+        String cmp = strs[0];
+        for (int i = 1; i < strs.length; i++) {
+            cmp = longgestCommonP(cmp,strs[i]);
+        }
+        return cmp;
+    }
+    private String longgestCommonP(String s1, String s2){
+        int len = s1.length()>s2.length()? s2.length():s1.length();
+        StringBuffer sb = new StringBuffer();
+        sb.append("");
+        for (int i = 0; i < len; i++) {
+            if (s1.charAt(i)==s2.charAt(i)){
+                sb.append(s1.charAt(i));
+            }else {
+                break;
+            }
+        }
+        return sb.toString();
+    }
 }

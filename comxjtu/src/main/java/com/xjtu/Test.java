@@ -13,6 +13,15 @@ public class Test {
 
     public static void main(String[] args){
         System.out.println("A man, a plan, a canal: Panama".replaceAll("\\W*",""));
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Integer.MIN_VALUE);
+        System.out.println("   -42".trim());
+        System.out.println('-'-0);
+        System.out.println("words and 987".trim().replaceAll("\\D+","A"));
+        String strr = "-4193 with words12".trim().replaceAll("\\D+","A");
+//        strr = strr.substring(0,strr.indexOf('A'));
+        System.out.println(strr);
+        System.out.println(strr.substring(0));
         int[] a1 = new int[]{54,21,73,84,60,18,62,59,89,89,41,55,27,65,94,61,12,76,35,48,0,60,84,9,28,55,4,67,86,33};
         int[] a2 = new int[]{17,17,87,98,18,53,2,69,74,73,20,85,59,89,84,91,84,34,44,48,20,42,68,84,8,54,66,62,69,52,67,27,87,49,92,14,92,53,22,90,60,14,8,71,0,61,94,1,22,84,10,55,55,60,98,76,27,35,84,28,4,2,9,44,86,12,17,89,35,68,17,41,21,65,59,86,42,53,0,33,80,20};
         Arrays.sort(a1);
