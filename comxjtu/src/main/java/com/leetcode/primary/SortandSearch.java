@@ -53,4 +53,32 @@ public class SortandSearch {
             k++;
         }
     }
+
+    public int firstBadVersion(int n) {
+        if (n<1) return 0;
+        if (n==1) return 1;
+        return binarySearch(1,n);
+    }
+    private int binarySearch(int m,int n){
+        int lo = m, hi = n;
+        while (lo<=hi){
+//            if (isBadVersion(lo)) return lo;
+//            int mid = lo+ (hi-lo)/2;
+//            if (isBadVersion(mid)) return binarySearch(lo+1,mid);
+//            else {
+//                return binarySearch(mid+1,hi);
+//            }
+            if (isBadVersion(lo)) return lo;
+            int mid = lo + (hi-lo)/2;
+            if (isBadVersion(mid))
+                hi=mid;
+            else
+                lo=mid+1;
+        }
+        return hi;
+    }
+
+    private boolean isBadVersion(int i){
+        return false;
+    }
 }
