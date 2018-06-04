@@ -173,7 +173,7 @@ public class DP {
             return c;
     }
     /**
-     * 动态规划
+     * 动态规划https://blog.csdn.net/anlian523/article/details/75244422
      * @param nums
      * @return
      */
