@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="861de4a9-ab3c-4d88-b608-cdd68707e804" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/Tree.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/Tree.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/BST.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/comxjtu/target/" />
@@ -15,16 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="MaxProfit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/MaxProfit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Strings.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Strings.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -79,17 +70,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tree.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Tree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/Tree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="211" column="5" lean-forward="false" selection-start-line="211" selection-start-column="5" selection-end-line="211" selection-end-column="5" />
+            <state relative-caret-position="143">
+              <caret line="223" column="0" lean-forward="false" selection-start-line="223" selection-start-column="0" selection-end-line="230" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1345#1355#0" expanded="true" />
-                <element signature="e#6114#6115#0" expanded="true" />
-                <element signature="e#6145#6146#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BST.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/BST.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -154,7 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/Question/InverseInt.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/test/com/leetcode/base/InverseArrayTest.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/test/test/com/leetcode/base/InverseArrayTest.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/InverseArray.java" />
@@ -205,6 +203,7 @@
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/DP.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Tree.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/Tree.java" />
+        <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/BST.java" />
       </list>
     </option>
   </component>
@@ -588,7 +587,7 @@
       <workItem from="1526437122139" duration="70528000" />
       <workItem from="1526820533079" duration="76059000" />
       <workItem from="1527399055709" duration="141182000" />
-      <workItem from="1527839820305" duration="31570000" />
+      <workItem from="1527839820305" duration="34917000" />
     </task>
     <servers />
   </component>
@@ -625,7 +624,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="319339000" />
+    <option name="totallyTimeSpent" value="322686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -699,14 +698,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/comxjtu/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comxjtu/src/test/test/com/leetcode/Question/TwoAdd2Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -811,6 +802,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-20">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -839,6 +831,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1387">
           <caret line="55" column="63" lean-forward="true" selection-start-line="55" selection-start-column="63" selection-end-line="55" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -860,6 +855,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
           <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1478#1479#0" expanded="false" />
+            <element signature="e#1509#1510#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -895,6 +895,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="548">
           <caret line="50" column="17" lean-forward="true" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -902,6 +903,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="62" column="30" lean-forward="true" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1083,14 +1085,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/Tree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="211" column="5" lean-forward="false" selection-start-line="211" selection-start-column="5" selection-end-line="211" selection-end-column="5" />
+        <state relative-caret-position="143">
+          <caret line="223" column="0" lean-forward="false" selection-start-line="223" selection-start-column="0" selection-end-line="230" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1345#1355#0" expanded="true" />
-            <element signature="e#6114#6115#0" expanded="true" />
-            <element signature="e#6145#6146#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/BST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
