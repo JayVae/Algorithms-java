@@ -1,5 +1,6 @@
 package com.leetcode.base;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -18,13 +19,11 @@ public class Tree {
      * @return
      */
     List<Integer> list = new LinkedList<>();
-
     public List<Integer> preorderTraversal(TreeNode root) {
         if (root == null) return list;
         preorder(root);
         return list;
     }
-
     private void preorder(TreeNode root) {
         if (root == null) return;
         list.add(root.val);
@@ -32,13 +31,16 @@ public class Tree {
         preorder(root.right);
     }
 
-
+    /**
+     * 中序遍历
+     * @param root
+     * @return
+     */
     public List<Integer> inorderTraversal(TreeNode root) {
         if (root == null) return list;
         inorder(root);
         return list;
     }
-
     private void inorder(TreeNode root) {
         if (root == null) return;
         inorder(root.left);
@@ -46,11 +48,15 @@ public class Tree {
         inorder(root.right);
     }
 
+    /**
+     * 后序遍历
+     * @param root
+     * @return
+     */
     public List<Integer> postorderTraversal(TreeNode root) {
         postorder(root);
         return list;
     }
-
     private void postorder(TreeNode root) {
         if (root == null) return;
         postorder(root.left);
@@ -58,9 +64,12 @@ public class Tree {
         list.add(root.val);
     }
 
+    /**
+     *层次遍历，原来是迭代方法
+     * levelOrder1是递归方法
+     */
     Queue<TreeNode> queue = new LinkedBlockingQueue<TreeNode>();
     List<List<Integer>> result = new LinkedList<>();
-
     public List<List<Integer>> levelOrder(TreeNode root) {
         if (root == null) return result;
         queue.add(root);
@@ -69,7 +78,6 @@ public class Tree {
         }
         return result;
     }
-
     private void levelorder() {
         if (queue.isEmpty()) return;
         List<Integer> level = new LinkedList<>();
@@ -81,6 +89,19 @@ public class Tree {
             if (node.right != null) queue.add(node.right);
         }
         result.add(level);
+    }
+    static List<List<Integer>> result1;
+    public List<List<Integer>> levelOrder1(TreeNode root) {
+        result1=new ArrayList<>();
+        recursion(root, 0);
+        return result1;
+    }
+    public void recursion(TreeNode node, int level){
+        if(node==null)return;
+        if(result1.size()<=level)result1.add(new ArrayList<Integer>());
+        result1.get(level).add(node.val);
+        recursion(node.left, level+1);
+        recursion(node.right, level+1);
     }
 
     /**

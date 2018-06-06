@@ -1,9 +1,6 @@
 package com.leetcode.primary;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * @Author: Jay
@@ -97,7 +94,7 @@ public class Tree {
         return true;
     }
     /**
-     * 如果是一棵二叉查找树必必是有序的,中序遍历
+     * 如果是一棵二叉查找树，必是有序的,中序遍历
      * @param root
      */
     public void inOrder(TreeNode root) {
@@ -110,6 +107,9 @@ public class Tree {
 
     /**
      * 给定一个二叉树，检查它是否是镜像对称的。
+     * 方法一是中序遍历（看构成的数组是不是前后对称的，但是这种方法是有问题的，会对所有叶子节点的左右节点添加-1），
+     * 方法二是递归，
+     * 方法三是迭代方法，借鉴层级遍历的方法
      * 例如，二叉树 [1,2,2,3,4,4,3] 是对称的。
      * @param root
      * @return
@@ -134,9 +134,55 @@ public class Tree {
             list.add(-1);
         }
     }
+    public boolean isSymmetric2(TreeNode root) {
+        if (root == null) {
+            return true;
+        }
+        return isMirror(root.left, root.right);
+    }
+    /**
+     * 判断一颗二叉树的左右两子节点是否对称
+     * @param leftNode 左子节点
+     * @param rightNode 右子节点
+     * @return true：对称 false：不对称
+     */
+    public boolean isMirror(TreeNode leftNode, TreeNode rightNode) {
+        if (leftNode == null && rightNode == null) {
+            return true;
+        } else if (
+                (leftNode != null && rightNode == null) ||
+                        (leftNode == null && rightNode != null) ||
+                        leftNode.val != rightNode.val ||
+                        !isMirror(leftNode.left, rightNode.right) ||
+                        !isMirror(leftNode.right, rightNode.left)) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    public boolean isSymmetric3(TreeNode root) {
+        TreeNode t1 =root;
+        TreeNode t2 =root;
+        Queue<TreeNode> q = new LinkedList<>();
+        q.offer(root);
+        q.offer(root);
+        while(!q.isEmpty()){
+            t1 = q.poll();
+            t2 = q.poll();
+            if (t1 == null && t2 == null) continue;
+            if (t1 == null || t2 == null) return false;
+            if (t1.val != t2.val) return false;
+            q.add(t1.left);
+            q.add(t2.right);
+            q.add(t1.right);
+            q.add(t2.left);
+        }
+        return true;
+    }
 
     /**
      * 给定一个二叉树，返回其按层次遍历的节点值。 （即逐层地，从左到右访问所有节点）。
+     * 见\base\Tree.java的方法
      * @param root
      * @return
      */
