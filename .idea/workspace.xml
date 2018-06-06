@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="861de4a9-ab3c-4d88-b608-cdd68707e804" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/MinStack.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Shuffle.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/Tree.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/Tree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Rotate.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Rotate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/MinStack.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/MinStack.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Shuffle.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Shuffle.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/comxjtu/target/" />
@@ -56,22 +54,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Shuffle.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Shuffle.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Shuffle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="-236">
+              <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
+                <element signature="e#276#277#0" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MinStack.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MinStack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/MinStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
-              <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="378">
+              <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+              <folding>
+                <element signature="e#303#304#0" expanded="true" />
+                <element signature="e#327#328#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#378#379#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -200,8 +209,8 @@
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Tree.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/Tree.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Rotate.java" />
-        <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Shuffle.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/MinStack.java" />
+        <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Shuffle.java" />
       </list>
     </option>
   </component>
@@ -353,7 +362,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.KthLargest">
+  <component name="RunManager" selected="Application.Shuffle">
     <configuration name="DP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -436,6 +445,25 @@
       <module name="comxjtu" />
       <envs />
     </configuration>
+    <configuration name="Shuffle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.primary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.primary.Shuffle" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="comxjtu" />
+      <envs />
+    </configuration>
     <configuration name="StringsTest.testStrStr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -460,25 +488,6 @@
       </option>
       <envs />
       <patterns />
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.xjtu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.xjtu.Test" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="comxjtu" />
-      <envs />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
@@ -561,19 +570,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Test" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.StringsTest.testStrStr" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Link" />
-      <item index="3" class="java.lang.String" itemvalue="Application.DP" />
-      <item index="4" class="java.lang.String" itemvalue="Application.KthLargest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.StringsTest.testStrStr" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Link" />
+      <item index="2" class="java.lang.String" itemvalue="Application.DP" />
+      <item index="3" class="java.lang.String" itemvalue="Application.KthLargest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Shuffle" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.KthLargest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.DP" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Link" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.StringsTest.testStrStr" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Shuffle" />
+        <item index="1" class="java.lang.String" itemvalue="Application.KthLargest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.DP" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Link" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.StringsTest.testStrStr" />
       </list>
     </recent_temporary>
   </component>
@@ -590,7 +599,7 @@
       <workItem from="1526437122139" duration="70528000" />
       <workItem from="1526820533079" duration="76059000" />
       <workItem from="1527399055709" duration="141182000" />
-      <workItem from="1527839820305" duration="70596000" />
+      <workItem from="1527839820305" duration="72804000" />
     </task>
     <servers />
   </component>
@@ -627,7 +636,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="358365000" />
+    <option name="totallyTimeSpent" value="360573000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -642,8 +651,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3305489" sideWeight="0.5048596" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36396182" sideWeight="0.49460045" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3305489" sideWeight="0.4951404" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36396182" sideWeight="0.49460045" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3305489" sideWeight="0.4951404" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2586393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -696,7 +705,7 @@
           <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="38" />
+      <option name="time" value="39" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1107,19 +1116,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Shuffle.java">
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/MinStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="378">
+          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding>
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/MinStack.java">
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Shuffle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="-236">
+          <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
