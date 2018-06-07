@@ -60,7 +60,58 @@ public class Maths {
     }
 
     public int romanToInt(String s) {
+        if (s==null || s.length()==0) return 0;
+        char[] chars = s.toCharArray();
+        int ans = 0;
+        for (int i = 0; i < chars.length; i++) {
+            switch (chars[i]){
+                case 'I':
+                    //1
+                    if (i<chars.length-1){
+                        if ( chars[i+1]=='V' || chars[i+1]=='X') ans = ans-1;
+                        else ans = ans+1;
+                    }else {
+                        ans = ans+1;
+                    }
+                    break;
+                case 'X':
+                    //10
+                    if (i<chars.length-1){
+                        if ( chars[i+1]=='L' || chars[i+1]=='C') ans = ans-10;
+                        else ans = ans+10;
+                    }else {
+                        ans = ans+10;
+                    }
+                    break;
+                case 'C':
+                    //100
+                    if (i<chars.length-1){
+                        if ( chars[i+1]=='D' || chars[i+1]=='M') ans = ans-100;
+                        else ans = ans+100;
+                    }else {
+                        ans = ans+100;
+                    }
+                    break;
+                case 'V':
+                    //5
+                    ans = ans +5;
+                    break;
+                case 'L':
+                    //50
+                    ans = ans +50;
+                    break;
+                case 'D':
+                    //500
+                    ans = ans +500;
+                    break;
+                case 'M':
+                    //1000
+                    ans = ans +1000;
+                    break;
+            }
 
+        }
+        return ans;
     }
 
     public static void main(String[] args){
