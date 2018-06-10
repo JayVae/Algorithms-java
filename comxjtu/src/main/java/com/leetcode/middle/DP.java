@@ -61,45 +61,18 @@ public class DP {
 
     }
 
-    private static int[][] result;
-
-    private static int maxValue = 100000000;
-    public int search(int index, int amount, int[] coins){
-        if(index >= coins.length){
-            return maxValue;
-        }
-
-        if(amount == 0){
-            return 0;
-        }
-
-        if(amount < 0){
-            return maxValue;
-        }
-
-        if(result[index][amount] >= 0){
-            return result[index][amount];
-        }
-
-        result[index][amount] = Math.min(search(index, amount - coins[index], coins) + 1,
-                search(index + 1, amount, coins));
-        return result[index][amount];
-    }
-
     public int coinChange(int[] coins, int amount) {
-        result = new int[20][10000];
-        for(int i = 0;i < 20; i++){
-            for(int j = 0; j < 10000; j++){
-                result[i][j] = -1;
-            }
+        if(amount<1) return 0;
+        int[] dp = new int[amount+1];
+        for (int i = 1;i<=amount;i++)
+            dp[i] = Integer.MAX_VALUE;
+        for (int i = 0;i<coins.length;i++){
+            for (int j = coins[i];j<=amount;j++)
+                if (dp[j-coins[i]]!=Integer.MAX_VALUE)
+                    dp[j] = Math.min(dp[j],dp[j-coins[i]]+1);
+//            System.out.println(Arrays.toString(dp));
         }
-
-        int val = search(0, amount, coins);
-        if(val < maxValue){
-            return val;
-        }else{
-            return -1;
-        }
+        return dp[amount]>amount?-1:dp[amount];
     }
 }
 

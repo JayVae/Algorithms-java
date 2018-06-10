@@ -1,9 +1,6 @@
 package com.leetcode.middle;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * @Author: Jay
@@ -90,5 +87,64 @@ public class ArrayandString {
         }
         return res;
 
+    }
+
+    public List<List<String>> groupAnagrams(String[] strs) {
+        List<List<String>> list = new LinkedList<>();
+        if (strs==null || strs.length==0) return list;
+        Map<String,List<String>> map = new HashMap();
+        for (String str :
+                strs) {
+            char[] chars = str.toCharArray();
+            Arrays.sort(chars);
+            String tmp = String.valueOf(chars);
+            if (map.containsKey(tmp)) {
+                List<String> l = map.get(tmp);
+                l.add(str);
+                map.put(tmp,l);
+            }else {
+                List<String> l = new LinkedList<>();
+                l.add(str);
+                map.put(tmp,l);
+            }
+        }
+        for (List l :
+                map.values()) {
+            list.add(l);
+        }
+        return list;
+    }
+
+    public int lengthOfLongestSubstring(String s) {
+
+        int max=0;
+        int count=0;
+
+        char[] c=s.toCharArray();
+        for(int i=0;i<c.length;i++){
+
+            for(int j=count;j<i;j++){
+                if(c[i]==c[j]){
+                    count=j+1;
+                    break;
+                }
+            }
+            max=Math.max(max,i-count+1);
+        }
+        return max;
+
+    }
+
+    public static void main(String[] args){
+        ArrayandString as = new ArrayandString();
+        List<List<String>> list = as.groupAnagrams(new String[]{"eat","tea","tan","ate","nat","bat"});
+        for (List<String> l :
+                list) {
+            for (String s :
+                    l) {
+                System.out.print(s);
+            }
+            System.out.println("***");
+        }
     }
 }
