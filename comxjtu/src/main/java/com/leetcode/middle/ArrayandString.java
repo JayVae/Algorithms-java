@@ -89,6 +89,11 @@ public class ArrayandString {
 
     }
 
+    /**
+     * 字谜分组:给定一个字符串数组，将字母异位词组合在一起。字母异位词指字母相同，但排列不同的字符串。
+     * @param strs
+     * @return
+     */
     public List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> list = new LinkedList<>();
         if (strs==null || strs.length==0) return list;
@@ -115,6 +120,12 @@ public class ArrayandString {
         return list;
     }
 
+    /**
+     * 无重复字符的最长子串:给定一个字符串，找出不含有重复字符的最长子串的长度。
+     * http://baijiahao.baidu.com/s?id=1596959005481205984&wfr=spider&for=pc
+     * @param s
+     * @return
+     */
     public int lengthOfLongestSubstring(String s) {
 
         int max=0;
@@ -132,6 +143,62 @@ public class ArrayandString {
             max=Math.max(max,i-count+1);
         }
         return max;
+
+    }
+
+    /**
+     * 矩阵置零：给定一个 m x n 的矩阵，如果一个元素为 0，则将其所在行和列的所有元素都设为 0。
+     * 使用常数空间。
+     * @param matrix
+     */
+    public void setZeroes(int[][] matrix) {
+        // 第一行被设置的标志
+        boolean rowFlag = false;
+        // 第一列被设置的标志
+        boolean colFlag = false;
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                if (matrix[i][j] == 0) {
+                    // 标记第一行要被设置
+                    if (i == 0) {
+                        rowFlag = true;
+                    }
+
+                    // 标记第一列要被设置
+                    if (j == 0){
+                        colFlag = true;
+                    }
+
+                    // 在行列在标记要设置为0的行和列
+                    matrix[0][j] = 0;
+                    matrix[i][0] = 0;
+                }
+            }
+        }
+
+        // 对第二行第二列开始的元素设置0
+        for (int i = 1; i < matrix.length; i++) {
+            for (int j = 1; j < matrix[0].length; j++) {
+                if (matrix[i][0] == 0 || matrix[0][j] == 0) {
+                    matrix[i][j] = 0;
+                }
+            }
+        }
+
+        // 设置第一行为0
+        if (rowFlag) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                matrix[0][j] = 0;
+            }
+        }
+
+        // 设置第一列为0
+        if (colFlag) {
+            for (int i = 0; i < matrix.length; i++) {
+                matrix[i][0] = 0;
+            }
+        }
 
     }
 
