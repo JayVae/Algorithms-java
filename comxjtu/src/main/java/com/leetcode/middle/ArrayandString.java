@@ -202,6 +202,64 @@ public class ArrayandString {
 
     }
 
+    /**
+     * 最长回文子串：给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为1000。
+     * https://blog.csdn.net/qq_32354501/article/details/80084325
+     * http://baijiahao.baidu.com/s?id=1597535552455975997&wfr=spider&for=pc
+     * @param s
+     * @return
+     */
+    public String longestPalindrome(String s) {
+        if(s.length()<2) return s;
+        char[] chars = s.toCharArray();
+        int start = 0;
+        int end = chars.length-1;
+
+    }
+    private boolean isPalindrome(char[] chars,int start, int end){
+        for (int i = start; i < (start + end) / 2; i++) {
+            if (chars[i]!=chars[end-i]) return false;
+        }
+        return true;
+    }
+
+    /**
+     *  递增的三元子序列:给定一个未排序的数组，请判断这个数组中是否存在长度为3的递增的子序列。
+     *  要求算法时间复杂度为O(n)，空间复杂度为O(1) 。
+     *  第一种方法用了动态规划的思路，但不符合题意；
+     *  第二种方法满足条件，https://www.cnblogs.com/grandyang/p/5194599.html
+     * @param nums
+     * @return
+     */
+    public boolean increasingTriplet(int[] nums) {
+        if (nums.length<3) return false;
+        int[] dp = new int[nums.length];
+        for (int i = 0; i < dp.length; i++) {
+            dp[i]=1;
+        }
+        for (int i = 0; i < dp.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (nums[j]<nums[i]){
+                    dp[i] = Math.max(dp[i],dp[j]+1);
+                    if (dp[i]>=3) return true;
+                }
+            }
+        }
+        return false;
+    }
+    public boolean increasingTriplet1(int[] nums) {
+        if (nums.length<3) return false;
+        int m1 = Integer.MAX_VALUE,m2 = Integer.MAX_VALUE;
+        for (int a :
+                nums) {
+            if (m1 >= a) m1 = a;
+            else if (m2>=a) m2 =a;
+            else return true;
+        }
+        return false;
+    }
+
+
     public static void main(String[] args){
         ArrayandString as = new ArrayandString();
         List<List<String>> list = as.groupAnagrams(new String[]{"eat","tea","tan","ate","nat","bat"});
