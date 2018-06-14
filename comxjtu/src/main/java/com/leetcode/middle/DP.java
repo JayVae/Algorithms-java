@@ -1,5 +1,7 @@
 package com.leetcode.middle;
 
+import java.util.Arrays;
+
 /**
  * @Author: Jay
  * @Date: Created in 17:50 2018/6/9
@@ -73,6 +75,25 @@ public class DP {
 //            System.out.println(Arrays.toString(dp));
         }
         return dp[amount]>amount?-1:dp[amount];
+    }
+
+    /**
+     * Longest Increasing Subsequence:给定一个无序的整数数组，找到其中最长上升子序列的长度。
+     * @param nums
+     * @return
+     */
+    public int lengthOfLIS(int[] nums) {
+        int[] dp = new int[nums.length];
+        int len = 0;
+
+        for(int x : nums) {
+            int i = Arrays.binarySearch(dp, 0, len, x);
+            if(i < 0) i = -(i + 1);
+            dp[i] = x;
+            if(i == len) len++;
+        }
+
+        return len;
     }
 }
 
