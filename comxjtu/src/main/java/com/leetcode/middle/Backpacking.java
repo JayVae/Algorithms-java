@@ -1,6 +1,7 @@
 package com.leetcode.middle;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -62,6 +63,12 @@ public class Backpacking {
     }
     /**
      * 生成括号:给出 n 代表生成括号的对数，请你写出一个函数，使其能够生成所有可能的并且有效的括号组合。
+     * 思路：
+     在构造这个字符串时需要满足左括号的个数不能少于右括号的个数。
+     当左括号的个数小于右括号个数时，返回
+     当左括号个数和右括号个数均为n时，表示得到一个有效的字符串，将其push到vector中；
+     当左括号个数等于n而右括号个数不为n时，在字符串中添加右括号知道右括号个数为n；
+     否则随意添加左右括号。
      * @param n
      * @return
      */
@@ -103,6 +110,27 @@ public class Backpacking {
             result.add(list);
         }
         return result;
+    }
+
+    /**
+     * 子集2：给定一个可能包含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。
+     * @param nums
+     * @return
+     */
+    public List<List<Integer>> subsetsWithDup(int[] nums) {
+        List<List<Integer>> list = new ArrayList<>();
+        Arrays.sort(nums);
+        backtrack(list, new ArrayList<Integer>(), nums, 0);
+        return list;
+    }
+    private void backtrack(List<List<Integer>> list, List<Integer> tempList, int [] nums, int start){
+        list.add(new ArrayList<>(tempList));
+        for(int i = start; i < nums.length; i++){
+            if(i > start && nums[i] == nums[i-1]) continue; // skip duplicates
+            tempList.add(nums[i]);
+            backtrack(list, tempList, nums, i + 1);
+            tempList.remove(tempList.size() - 1);
+        }
     }
 
     public static void main(String[] args){

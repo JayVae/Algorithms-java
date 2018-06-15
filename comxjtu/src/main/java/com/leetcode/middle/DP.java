@@ -79,6 +79,8 @@ public class DP {
 
     /**
      * Longest Increasing Subsequence:给定一个无序的整数数组，找到其中最长上升子序列的长度。
+     * 动态规划方法的复杂度是O(N2)
+     * https://blog.csdn.net/u013178472/article/details/54926531使用二分查找将复杂度降低到O(NlogN)
      * @param nums
      * @return
      */
