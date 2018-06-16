@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="861de4a9-ab3c-4d88-b608-cdd68707e804" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/SortandSearch.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/Backpacking.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/Backpacking.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/comxjtu/target/" />
@@ -16,18 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="Maths.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Maths.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1593">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="114" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Others.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Others.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -94,7 +82,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Backpacking.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Backpacking.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/Backpacking.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="62">
@@ -103,6 +91,16 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#2336#2344#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SortandSearch.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/SortandSearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -150,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/comxjtu/src/test/test/com/leetcode/Question/CountSayTest.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/Question/CountSay.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/test/com/leetcode/Question/RemoveDuplicateTest.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/test/test/com/leetcode/Question/RemoveDuplicateTest.java" />
@@ -201,6 +198,7 @@
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/ArrayandString.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/DP.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/Backpacking.java" />
+        <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/SortandSearch.java" />
       </list>
     </option>
   </component>
@@ -569,7 +567,7 @@
       <workItem from="1527839820305" duration="88910000" />
       <workItem from="1528532303322" duration="44511000" />
       <workItem from="1528855008019" duration="36859000" />
-      <workItem from="1529047758472" duration="2183000" />
+      <workItem from="1529047758472" duration="5171000" />
     </task>
     <servers />
   </component>
@@ -606,7 +604,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="460232000" />
+    <option name="totallyTimeSpent" value="463220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -680,13 +678,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/test/test/com/leetcode/Question/ValidParenthesesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch1/Evaluate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-20">
@@ -1053,6 +1044,14 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2336#2344#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/SortandSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
