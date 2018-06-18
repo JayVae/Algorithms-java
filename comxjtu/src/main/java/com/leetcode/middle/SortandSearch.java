@@ -6,6 +6,5 @@ package com.leetcode.middle;
  * @Modified By:
  */
 public class SortandSearch {
-
-
+    //今天是端午啊，下雨，心情平静。
 }
