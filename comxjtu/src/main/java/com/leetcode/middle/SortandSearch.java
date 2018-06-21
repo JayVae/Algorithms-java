@@ -278,12 +278,47 @@ public class SortandSearch {
      */
     public int[] searchRange(int[] nums, int target) {
         if (nums.length<1) return new int[]{-1,-1};
-        int ans = binarySearch(nums,target);
+        int ans = binarySearch(nums,target,0,nums.length-1);
         if (ans==-1){
             return new int[]{-1,-1};
         }else {
             int[] res = new int[2];
-            boolean flag = false;
+            int start=ans,end=ans;
+            while (start!=-1){
+                if (start!=0){
+                    ans = start;
+                    start = binarySearch(nums,target,0,start-1);
+                }else {
+                    start = 0;
+                    break;
+                }
+            }
+            if (start!=0){
+                start = ans;
+            }
+            while (end!=-1){
+                if (end!=nums.length-1){
+                    ans = end;
+                    end = binarySearch(nums,target,end+1,nums.length-1);
+                }else {
+                    end = nums.length-1;
+                    break;
+                }
+            }
+            if (end!=nums.length-1){
+                end = ans;
+            }
+/*
+            if (ans!=nums.length-1){
+                end = binarySearch(nums,target,ans+1,nums.length-1);
+                if (end==-1){
+                    end = ans;
+                }
+            }else {
+                end = ans;
+            }*/
+            return new int[]{start,end};
+            /*boolean flag = false;
             for (int i = ans+1; i < nums.length; i++) {
                 if (nums[i]!=target){
                     res[1] = i-1;
@@ -301,12 +336,12 @@ public class SortandSearch {
                 }
             }
             if (!flag) res[0] = 0;
-            return res;
+            return res;*/
         }
 
     }
-    private int binarySearch(int[] nums,int target){
-        int lo = 0, hi = nums.length-1;
+    private int binarySearch(int[] nums,int target,int low,int high){
+        int lo = low, hi = high;
         while (lo<=hi){
             int mid = (lo + hi)/2;
             if (nums[mid]<target) lo = mid+1;
@@ -359,6 +394,22 @@ public class SortandSearch {
         Interval(int s, int e) {
             start = s;
             end = e;
+        }
+    }
+
+    /**
+     * 搜索旋转排序数组
+     * @param nums
+     * @param target
+     * @return
+     */
+    public int search(int[] nums, int target) {
+
+    }
+    private int binaryMiddle(int[] nums){
+        int lo = 0, hi = nums.length-1;
+        while (lo<=hi){
+            int mi
         }
     }
 }
