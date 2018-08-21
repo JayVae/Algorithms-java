@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="861de4a9-ab3c-4d88-b608-cdd68707e804" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/alibaba/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/Question/lc219.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/Question/lc220.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/BST.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/BST.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/Tree.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/Tree.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/Backpacking.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/Backpacking.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/DP.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/DP.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Tree.java" afterPath="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Tree.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/comxjtu/target/" />
@@ -21,36 +20,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="Nod.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/netease/Nod.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Max.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/netease/Max.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="33" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tower.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/netease/Tower.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="29" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="14" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Dict.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/netease/Dict.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -61,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Backpacking.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Backpacking.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/Backpacking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3950">
-              <caret line="150" column="12" lean-forward="false" selection-start-line="150" selection-start-column="12" selection-end-line="150" selection-end-column="12" />
+            <state relative-caret-position="203">
+              <caret line="299" column="11" lean-forward="false" selection-start-line="299" selection-start-column="7" selection-end-line="299" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -100,18 +69,50 @@
       <file leaf-file-name="Tree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/Tree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="247" column="0" lean-forward="false" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
+            <state relative-caret-position="378">
+              <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+              <folding>
+                <element signature="e#9044#9054#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="One2Nine.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/Question/One2Nine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BST.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RemoveDuplicate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/Question/RemoveDuplicate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BST.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/BST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="246" column="44" lean-forward="true" selection-start-line="246" selection-start-column="44" selection-end-line="246" selection-end-column="44" />
+            <state relative-caret-position="-3733">
+              <caret line="77" column="41" lean-forward="false" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Link.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Link.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -147,8 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/String.java" />
-        <option value="$PROJECT_DIR$/comxjtu/src/test/com/leetcode/primary/StringsTest.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/test/test/com/leetcode/primary/StringsTest.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Strings.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Link.java" />
@@ -192,12 +191,14 @@
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/netease/Max.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/netease/Tower.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/netease/Dict.java" />
-        <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/Backpacking.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/DP.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/alibaba/Main.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Tree.java" />
+        <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/Question/lc219.java" />
+        <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/Question/lc220.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/BST.java" />
         <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/Tree.java" />
+        <option value="$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/Backpacking.java" />
       </list>
     </option>
   </component>
@@ -313,6 +314,17 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="primary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithoms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithoms" type="462c0819:PsiDirectoryNode" />
+              <item name="comxjtu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Question" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Algorithoms" type="b2602c69:ProjectViewProjectNode" />
@@ -557,6 +569,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="861de4a9-ab3c-4d88-b608-cdd68707e804" name="Default" comment="" />
@@ -577,7 +592,7 @@
       <workItem from="1531382250904" duration="36557000" />
       <workItem from="1531724521696" duration="2179000" />
       <workItem from="1533968380883" duration="11690000" />
-      <workItem from="1534677378036" duration="19457000" />
+      <workItem from="1534677378036" duration="32754000" />
     </task>
     <servers />
   </component>
@@ -614,7 +629,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="591269000" />
+    <option name="totallyTimeSpent" value="604566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -629,7 +644,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36396182" sideWeight="0.49460045" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3305489" sideWeight="0.4951404" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22673032" sideWeight="0.4951404" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30075595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -688,42 +703,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/Question/Roman2Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Others.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3105">
-          <caret line="117" column="20" lean-forward="false" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/Question/TwoAdd2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1674">
-          <caret line="62" column="30" lean-forward="false" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/Question/TwoSumSolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/ArrayandString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5832">
-          <caret line="216" column="20" lean-forward="false" selection-start-line="216" selection-start-column="20" selection-end-line="216" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/xjtu/ch1/BinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1021,14 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/Backpacking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3950">
-          <caret line="150" column="12" lean-forward="false" selection-start-line="150" selection-start-column="12" selection-end-line="150" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/DP.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
@@ -1059,18 +1030,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/Tree.java">
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/primary/Link.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="247" column="0" lean-forward="false" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
+        <state relative-caret-position="175">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/Question/lc220.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/Question/lc219.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/BST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="246" column="44" lean-forward="true" selection-start-line="246" selection-start-column="44" selection-end-line="246" selection-end-column="44" />
+        <state relative-caret-position="-3733">
+          <caret line="77" column="41" lean-forward="false" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/base/Tree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="e#9044#9054#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/Question/One2Nine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/Question/RemoveDuplicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comxjtu/src/main/java/com/leetcode/middle/Backpacking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="299" column="11" lean-forward="false" selection-start-line="299" selection-start-column="7" selection-end-line="299" selection-end-column="11" />
           <folding />
         </state>
       </provider>

@@ -12,6 +12,8 @@ import java.util.concurrent.LinkedBlockingQueue;
 /**
  * 遍历方法及通用方法；
  * 根据一棵树的中序遍历与后序遍历（前序）构造二叉树。
+ * 每个节点的右向指针,填充同一层的兄弟节点
+ * 二叉树的序列与反序列化Codec
  */
 public class Tree {
     /**
@@ -21,11 +23,13 @@ public class Tree {
      * @return
      */
     List<Integer> list = new LinkedList<>();
+
     public List<Integer> preorderTraversal(TreeNode root) {
         if (root == null) return list;
         preorder(root);
         return list;
     }
+
     private void preorder(TreeNode root) {
         if (root == null) return;
         list.add(root.val);
@@ -35,6 +39,7 @@ public class Tree {
 
     /**
      * 中序遍历
+     *
      * @param root
      * @return
      */
@@ -44,6 +49,7 @@ public class Tree {
 
         return list;
     }
+
     private void inorder(TreeNode root) {
         if (root == null) return;
         inorder(root.left);
@@ -53,6 +59,7 @@ public class Tree {
 
     /**
      * 后序遍历
+     *
      * @param root
      * @return
      */
@@ -60,6 +67,7 @@ public class Tree {
         postorder(root);
         return list;
     }
+
     private void postorder(TreeNode root) {
         if (root == null) return;
         postorder(root.left);
@@ -68,11 +76,12 @@ public class Tree {
     }
 
     /**
-     *层次遍历，原来是迭代方法
+     * 层次遍历，原来是迭代方法
      * levelOrder1是递归方法
      */
     Queue<TreeNode> queue = new LinkedBlockingQueue<TreeNode>();
     List<List<Integer>> result = new LinkedList<>();
+
     public List<List<Integer>> levelOrder(TreeNode root) {
         if (root == null) return result;
         queue.add(root);
@@ -81,6 +90,7 @@ public class Tree {
         }
         return result;
     }
+
     private void levelorder() {
         if (queue.isEmpty()) return;
         List<Integer> level = new LinkedList<>();
@@ -93,20 +103,22 @@ public class Tree {
         }
         result.add(level);
     }
+
     static List<List<Integer>> result1;
+
     public List<List<Integer>> levelOrder1(TreeNode root) {
-        result1=new ArrayList<>();
+        result1 = new ArrayList<>();
         recursion(root, 0);
         return result1;
     }
-    public void recursion(TreeNode node, int level){
-        if(node==null)return;
-        if(result1.size()<=level)result1.add(new ArrayList<Integer>());
-        result1.get(level).add(node.val);
-        recursion(node.left, level+1);
-        recursion(node.right, level+1);
-    }
 
+    public void recursion(TreeNode node, int level) {
+        if (node == null) return;
+        if (result1.size() <= level) result1.add(new ArrayList<Integer>());
+        result1.get(level).add(node.val);
+        recursion(node.left, level + 1);
+        recursion(node.right, level + 1);
+    }
 
 
     /**
@@ -188,16 +200,17 @@ public class Tree {
 
     /**
      * 每个节点的右向指针,填充同一层的兄弟节点
-     * 方法一是假定树为完美二叉树，方法二没有这个条件
+     * 方法一是假定树为完美二叉树，方法二没有这个条件,方法三是采用层序遍历法
+     *
      * @param root
      */
     public void connect(TreeLinkNode root) {
         //递归的实现方式
         if (root == null)
             return;
-        if (root.left != null){
+        if (root.left != null) {
             root.left.next = root.right;
-            if (root.next != null){
+            if (root.next != null) {
                 root.right.next = root.next.left;
             }
 
@@ -242,44 +255,70 @@ public class Tree {
             head = null;
             prev = null;
         }
-
     }
 
+    Queue<TreeLinkNode> queue2 = new LinkedList<>();
+
+    public void connect3(TreeLinkNode root) {
+        if (root == null) {
+            return;
+        }
+        queue2.add(root);
+        while (!queue2.isEmpty()){
+            int len = queue2.size();
+            TreeLinkNode pre = queue2.element();
+            for (int i = 0; i < len; i++) {
+                TreeLinkNode treeLinkNode = queue2.poll();
+                if (treeLinkNode.left != null) {
+                    queue2.add(treeLinkNode.left);
+                }
+                if (treeLinkNode.right != null) {
+                    queue2.add(treeLinkNode.right);
+                }
+                if (i!=0){
+                    pre.next = treeLinkNode;
+                    pre = treeLinkNode;
+                }
+            }
+        }
+    }
 
 
     //遍历的非递归通用写法
     List<Integer> res = new LinkedList<>();
+
     public List<Integer> traversal(TreeNode root) {
-        if (root==null) return res;
+        if (root == null) return res;
         Stack<Command> stack = new Stack<>();
-        stack.push(new Command("go",root));
-        while (!stack.isEmpty()){
+        stack.push(new Command("go", root));
+        while (!stack.isEmpty()) {
             Command command = stack.pop();
 
-            if (command.s.equals("print")){
+            if (command.s.equals("print")) {
                 res.add(command.node.val);
-            }else {
-                if (command.node.right!=null){
-                    stack.push(new Command("go",command.node.right));
+            } else {
+                if (command.node.right != null) {
+                    stack.push(new Command("go", command.node.right));
                 }
-                if (command.node.left!=null){
-                    stack.push(new Command("go",command.node.left));
+                if (command.node.left != null) {
+                    stack.push(new Command("go", command.node.left));
                 }
-                stack.push(new Command("print",command.node));
+                stack.push(new Command("print", command.node));
             }
         }
         return res;
     }
 
-    class Command{
+    class Command {
         String s;//go,print
         TreeNode node;
 
-        Command(String str,TreeNode treeNode){
-            s=str;
+        Command(String str, TreeNode treeNode) {
+            s = str;
             node = treeNode;
         }
     }
+
     public class TreeNode {
         int val;
         TreeNode left;
@@ -297,5 +336,71 @@ public class Tree {
         TreeLinkNode(int x) {
             val = x;
         }
+    }
+}
+
+class Codec {
+
+    //tools for reconstruct treenode
+    Queue<TreeNode> queue = new LinkedList<TreeNode>();
+    boolean isLeft = true;
+    TreeNode root = null;
+
+    // Encodes a tree to a single string.
+    public String serialize(TreeNode root) {
+        StringBuilder builder = new StringBuilder();
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+
+        while(!queue.isEmpty()){
+            TreeNode top = queue.poll();
+            if(top == null){
+                builder.append('#');
+                builder.append(',');
+            }
+            else{
+                builder.append(top.val);
+                builder.append(',');//以,作为分割
+                queue.offer(top.left);
+                queue.offer(top.right);
+            }
+        }
+        return builder.toString();
+    }
+
+    // Decodes your encoded data to tree.
+    public TreeNode deserialize(String data) {
+        String[] strs = data.split(",");
+        int size = strs.length;
+
+        for(int i = 0;i<size;i++){
+            String curstr = strs[i];
+            if(curstr.length() == 0)
+                continue;
+            else if(curstr.equals("#")){
+                appendNodeToTree(null);
+            }else{
+                int val = Integer.parseInt(curstr);
+                appendNodeToTree(new TreeNode(val));
+            }
+        }
+        return root;
+    }
+    private void appendNodeToTree(TreeNode node){
+        if(root == null){
+            root = node;
+            queue.offer(node);
+            return;
+        }
+        TreeNode top = queue.peek();
+        if(isLeft){
+            top.left = node;
+        }else{
+            top.right = node;
+            queue.poll();
+        }
+        isLeft = !isLeft;//取反
+        if(node != null)
+            queue.offer(node);
     }
 }

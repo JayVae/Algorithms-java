@@ -36,6 +36,12 @@ public class BST {
         return valid(node.left,mn,node.val) && valid(node.right,node.val,mx);
     }
 
+    /**
+     * 二叉搜索树中搜索
+     * @param root
+     * @param val
+     * @return
+     */
     public TreeNode searchBST(TreeNode root, int val) {
         if (root==null) return null;
         if (root.val<val) return searchBST(root.right,val);
@@ -44,6 +50,12 @@ public class BST {
         else return null;
     }
 
+    /**
+     * 二叉树增加
+     * @param root
+     * @param val
+     * @return
+     */
     public TreeNode insertIntoBST(TreeNode root, int val) {
         if (root == null) {
             return new TreeNode(val);
@@ -160,25 +172,7 @@ public class BST {
         return root;
     }
 
-    /**
-     * 给定一个整数数组，判断数组中是否有两个不同的索引 i 和 j，使得 nums [i] 和 nums [j] 的差的绝对值最大为 t，并且 i 和 j 之间的差的绝对值最大为 ķ。
-     * @param nums
-     * @param k
-     * @param t
-     * @return
-     */
-    public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
-        if (nums==null || nums.length==0) return false;
-        for (int i = 1; i < k+1; i++) {
-            for (int j = 0; j < nums.length; j++) {
-                if (j+i>=nums.length) break;
-                int tmp = nums[j]>nums[j+i]?(nums[j]-nums[j+i]):(nums[j+i]-nums[j]);
-                if (tmp<0) return true;
-                if (tmp<=t) return true;
-            }
-        }
-        return false;
-    }
+
 
     /**
      * 给定一个二叉树，判断它是否是高度平衡的二叉树。

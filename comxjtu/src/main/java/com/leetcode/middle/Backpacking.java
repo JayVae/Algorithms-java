@@ -93,6 +93,35 @@ public class Backpacking {
     }
 
     /**
+     * lc77 给定两个整数 n 和 k，返回 1 ... n 中所有可能的 k 个数的组合。
+     * @param n
+     * @param k
+     * @return
+     */
+    List<List<Integer>> list = new ArrayList<>();
+    public List<List<Integer>> combine(int n, int k) {
+
+        if (n<1 || k<1 || n<k) return list;
+        // Arrays.sort(nums); // not necessary
+        backtrack(n, k,1, new ArrayList<Integer>());
+        return list;
+    }
+
+    private void backtrack(int n, int k, int start, ArrayList<Integer> ans) {
+        if (ans.size()==k){
+            list.add(new ArrayList<>(ans));
+            return;
+        }
+//        使用剪枝优化，将i<=n 改为i<= n-(k-ans.size)+1
+//        for (int i = start; i <= n; i++) {
+        for (int i = start; i <= n-(k-ans.size())+1; i++) {
+            ans.add(i);
+            backtrack(n,k,i+1,ans);
+            ans.remove(ans.size()-1);
+        }
+    }
+
+    /**
      * lc39
      * 组合求和(可以用重复数字)
      * @param nums
@@ -268,7 +297,7 @@ public class Backpacking {
         }
     }
 
-    /**
+    /**lc79
      * 单词搜索：给定一个二维网格和一个单词，找出该单词是否存在于网格中。
      * @param board
      * @param word
@@ -294,6 +323,42 @@ public class Backpacking {
                 || exist(board, y-1, x, word, i+1);
         board[y][x] ^= 256;
         return exist;
+    }
+
+    int[][] dir = new int[][]{{0,-1},{1,0},{0,1},{-1,0}};
+    int m,n;
+
+    public boolean exist2(char[][] board, String word) {
+        char[] chars = word.toCharArray();
+        m = board.length;
+        n= board[0].length;
+        boolean[][] visited = new boolean[board.length][board[0].length];
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[0].length; j++) {
+                if (backtrack(chars,0,board,i,j,visited))
+                    return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean backtrack(char[] chars, int index, char[][] board,int startx, int starty,boolean[][] visited) {
+        if (index==chars.length-1){
+            return chars[index]==board[startx][starty];
+        }
+        if (board[startx][starty]==chars[index]){
+            visited[startx][starty]=true;
+            for (int i = 0; i < 4; i++) {
+                int newx = startx+dir[i][0];
+                int newy = starty+dir[i][1];
+                if (!visited[newx][newy] && newx>=0 && newy>=0 && newx<m && newy<n){
+                    if (backtrack(chars,index+1,board,newx,newy,visited))
+                        return true;
+                }
+            }
+            visited[startx][starty]=false;
+        }
+        return false;
     }
 
     public static void main(String[] args){
