@@ -5,6 +5,13 @@ package com.leetcode.base;
  * @Date: Created in 21:16 2018/6/4
  * @Modified By:
  */
+
+/**
+ * 在二叉搜索树中实现搜索、插入、删除
+ * 二叉搜索树的最近公共祖先
+ * 将有序数组转换为二叉搜索树
+ * 判断它是否是高度平衡的二叉树。
+ */
 public class BST {
     /**
      * 给定一个二叉树，判断其是否是一个有效的二叉搜索树。
@@ -195,12 +202,6 @@ public class BST {
 
     }
 
-    public TreeNode sortedArrayToBST(int[] nums) {
-        if(nums == null || nums.length == 0)
-            return null;
-        return getTree(nums,0,nums.length - 1);
-    }
-
     /**
      * 将有序数组转换为二叉搜索树
      * @param nums
@@ -208,6 +209,11 @@ public class BST {
      * @param r
      * @return
      */
+    public TreeNode sortedArrayToBST(int[] nums) {
+        if(nums == null || nums.length == 0)
+            return null;
+        return getTree(nums,0,nums.length - 1);
+    }
     public TreeNode getTree(int []nums,int l,int r){
         if(l <= r){
             int mid = (l+r)/2;
@@ -219,6 +225,7 @@ public class BST {
             return null;
         }
     }
+
 
     /**
      * 给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。

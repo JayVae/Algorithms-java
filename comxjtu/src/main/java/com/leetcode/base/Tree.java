@@ -8,6 +8,11 @@ import java.util.concurrent.LinkedBlockingQueue;
  * @Date: Created in 17:06 2018/6/1
  * @Modified By:
  */
+
+/**
+ * 遍历方法及通用方法；
+ * 根据一棵树的中序遍历与后序遍历（前序）构造二叉树。
+ */
 public class Tree {
     /**
      * 前序遍历
@@ -36,6 +41,7 @@ public class Tree {
     public List<Integer> inorderTraversal(TreeNode root) {
         if (root == null) return list;
         inorder(root);
+
         return list;
     }
     private void inorder(TreeNode root) {
@@ -101,22 +107,7 @@ public class Tree {
         recursion(node.right, level+1);
     }
 
-    /**
-     * 给定一个二叉树和一个目标和，判断该树中是否存在根节点到叶子节点的路径，这条路径上所有节点值相加等于目标和。
-     * 说明: 叶子节点是指没有子节点的节点。
-     *
-     * @param root
-     * @param sum
-     * @return
-     */
-    public boolean hasPathSum(TreeNode root, int sum) {
-        if (root == null) return false;
-        else if (root.left == null && root.right == null) {
-            return sum == root.val;
-        } else {
-            return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
-        }
-    }
+
 
     /**
      * 根据一棵树的中序遍历与后序遍历构造二叉树。
@@ -254,24 +245,8 @@ public class Tree {
 
     }
 
-    /**
-     * 给定一棵二叉树, 找到该树中两个指定节点的最近公共祖先。
-     * @param root
-     * @param p
-     * @param q
-     * @return
-     */
-    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        if(root == null) return null;
-        if(root == p) return p;
-        if(root == q) return q;
 
-        TreeNode left = lowestCommonAncestor(root.left, p, q);
-        TreeNode right = lowestCommonAncestor(root.right, p, q);
 
-        if(left != null && right != null) return root;
-        return left != null ? left : right;
-    }
     //遍历的非递归通用写法
     List<Integer> res = new LinkedList<>();
     public List<Integer> traversal(TreeNode root) {

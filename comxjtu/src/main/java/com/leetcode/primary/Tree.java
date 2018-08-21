@@ -7,6 +7,11 @@ import java.util.*;
  * @Date: Created in 9:18 2018/5/31
  * @Modified By:
  */
+
+/**
+ * 最大深度，isValidBST，isSymmetric,hasPathSum,验证二叉搜索树
+ *
+ */
 public class Tree {
     /**
      * 给定一个二叉树，找出其最大深度。
@@ -70,27 +75,19 @@ public class Tree {
         return valid(node.left,mn,node.val) && valid(node.right,node.val,mx);
     }
 
-    private Stack<Integer> stack;
     public boolean isValidBST3(TreeNode root) {
 
         if (root == null) {
             return true;
         }
 
-        stack = new Stack<>();
+        list = new ArrayList<>();
         inOrder(root);
-
-        int i = stack.pop();
-        int j;
-        while (!stack.isEmpty()) {
-            j = stack.pop();
-            if (i <= j) {
+        for (int i = 0; i < list.size()-1; i++) {
+            if ((int)list.get(i)>=(int)list.get(i+1)){
                 return false;
             }
-
-            i = j;
         }
-
         return true;
     }
     /**
@@ -100,7 +97,7 @@ public class Tree {
     public void inOrder(TreeNode root) {
         if (root != null) {
             inOrder(root.left);
-            stack.push(root.val);
+            list.add(root.val);
             inOrder(root.right);
         }
     }
@@ -164,8 +161,14 @@ public class Tree {
         TreeNode t1 =root;
         TreeNode t2 =root;
         Queue<TreeNode> q = new LinkedList<>();
-        q.offer(root);
-        q.offer(root);
+        if (root==null) return true;
+        if (root.left==null || root.right==null){
+            if (root.left==null && root.right==null)
+                return true;
+            return false;
+        }
+        q.offer(root.left);
+        q.offer(root.right);
         while(!q.isEmpty()){
             t1 = q.poll();
             t2 = q.poll();
@@ -181,29 +184,22 @@ public class Tree {
     }
 
     /**
-     * 给定一个二叉树，返回其按层次遍历的节点值。 （即逐层地，从左到右访问所有节点）。
-     * 见\base\Tree.java的方法
+     * 给定一个二叉树和一个目标和，判断该树中是否存在根节点到叶子节点的路径，这条路径上所有节点值相加等于目标和。
+     * 说明: 叶子节点是指没有子节点的节点。
+     *
      * @param root
+     * @param sum
      * @return
      */
-    public List<List<Integer>> levelOrder(TreeNode root) {
-        if (root==null) return null;
-        List<List<Integer>> list = new LinkedList<>();
-        ArrayList<Integer> l1= new ArrayList();
-        l1.add(1);
-        list.add(l1);
-        return list;
+    public boolean hasPathSum(TreeNode root, int sum) {
+        if (root == null) return false;
+        else if (root.left == null && root.right == null) {
+            return sum == root.val;
+        } else {
+            return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
+        }
     }
 
-    /**
-     * 将一个按照升序排列的有序数组，转换为一棵高度平衡二叉搜索树。
-     本题中，一个高度平衡二叉树是指一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。
-     * @param nums
-     * @return
-     */
-    public TreeNode sortedArrayToBST(int[] nums) {
-        return new TreeNode(1);
-    }
 
 
     public class TreeNode {

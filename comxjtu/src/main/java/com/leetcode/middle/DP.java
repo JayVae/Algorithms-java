@@ -97,5 +97,51 @@ public class DP {
 
         return len;
     }
+
+    /**
+     * lc343 拆分为至少两个正整数
+     * 第一个方法是记忆化搜索，自上而下
+     * @param n
+     * @return
+     */
+    public int integerBreak(int n) {
+        if (n==1) return 1;
+        int res = 1;
+        int[] dp = new int[n];
+        for (int i = 0; i < n; i++) {
+            dp[i]=-1;
+        }
+        res = intbreak(n,dp);
+        return res;
+    }
+    private int intbreak(int n, int[] dp){
+        if (n==1){
+            dp[0]=1;
+            return 1;
+        }
+        if (dp[n-1]!=-1) return dp[n-1];
+        for (int i = 1; i < n; i++) {
+            dp[n-1] = max3(dp[n-1],intbreak(n-i,dp)*i,i*(n-i));
+        }
+        return dp[n-1];
+    }
+    private int max3(int a, int b, int c){
+        return Math.max(a,Math.max(b,c));
+    }
+    public int integerBreak2(int n) {
+        if (n<=1) return 1;
+        int res = 1;
+        int[] dp = new int[n];
+        for (int i = 0; i < n; i++) {
+            dp[i]=-1;
+        }
+        dp[0]=1;
+        for (int i = 2; i < n+1; i++) {
+            for (int j = 1; j < i; j++) {
+                dp[i-1] = max3(dp[i-1],dp[i-1-j]*j,(i-j)*j);
+            }
+        }
+        return dp[n-1];
+    }
 }
 

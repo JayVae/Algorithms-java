@@ -145,6 +145,38 @@ public class Backpacking {
             }
         }
     }
+
+    /**
+     * lc131
+     * 分割回文串
+     * @param s
+     * @return
+     */
+    public List<List<String>> partition(String s) {
+        List<List<String>> list = new ArrayList<>();
+        backtrack(list, new ArrayList<>(), s, 0);
+        return list;
+    }
+
+    public void backtrack(List<List<String>> list, List<String> tempList, String s, int start){
+        if(start == s.length())
+            list.add(new ArrayList<>(tempList));
+        else{
+            for(int i = start; i < s.length(); i++){
+                if(isPalindrome(s, start, i)){
+                    tempList.add(s.substring(start, i + 1));
+                    backtrack(list, tempList, s, i + 1);
+                    tempList.remove(tempList.size() - 1);
+                }
+            }
+        }
+    }
+
+    public boolean isPalindrome(String s, int low, int high){
+        while(low < high)
+            if(s.charAt(low++) != s.charAt(high--)) return false;
+        return true;
+    }
     /**
      * 生成括号:给出 n 代表生成括号的对数，请你写出一个函数，使其能够生成所有可能的并且有效的括号组合。
      * 思路：
