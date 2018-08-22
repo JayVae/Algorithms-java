@@ -6,4 +6,8 @@ package com.xjtu.ch1;
  * @Modified By:
  */
 public class BinarySearch {
+
+/**
+ * 见BST,见ThreeSumFast
+ */
 }

@@ -8,6 +8,16 @@ import java.util.List;
  * @Date: Created in 17:20 2018/5/30
  * @Modified By:
  */
+
+/**
+ * 包括读取数组，输出成list的辅助函数。
+ * 删除某个节点
+ * lc203 删除节点（虚拟节点的技术）
+ * 反转
+ * 有环1,2
+ * 相交
+ * 奇偶链表见middle
+ */
 public class Link {
 
     /**
@@ -60,6 +70,25 @@ public class Link {
             return head;
         }
     }
+    public ListNode removeNthFromEnd2(ListNode head, int n) {
+
+        ListNode start = new ListNode(0);
+        ListNode slow = start, fast = start;
+        slow.next = head;
+
+        //Move fast in front so that the gap between slow and fast becomes n
+        for(int i=1; i<=n+1; i++)   {
+            fast = fast.next;
+        }
+        //Move fast to the end, maintaining the gap
+        while(fast != null) {
+            slow = slow.next;
+            fast = fast.next;
+        }
+        //Skip the desired node
+        slow.next = slow.next.next;
+        return start.next;
+    }
     /**
      * 反转一个单链表。
      示例:
@@ -108,7 +137,7 @@ public class Link {
         return true;
     }
 
-    /**
+    /**lc141
      * 给定一个链表，判断链表中是否有环。
      进阶：
      你能否不使用额外空间解决此题？
@@ -125,6 +154,79 @@ public class Link {
             if (next==next2) return true;
         }
         return false;
+    }
+
+    /**
+     * lc142
+     * 给定一个链表，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。
+     * @param head
+     * @return
+     */
+    public ListNode detectCycle(ListNode head) {
+        if (head == null || head.next == null) return null;
+        ListNode fast = head, slow = head;
+        while(fast.next != null && fast.next.next!= null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            if (fast == slow) {
+                fast = head;
+                while (fast != slow) {
+                    fast = fast.next;
+                    slow = slow.next;
+                }
+                return fast;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * lc160
+     * @param headA
+     * @param headB
+     * @return
+     */
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        int lenA = length(headA), lenB = length(headB);
+        // move headA and headB to the same start point
+        while (lenA > lenB) {
+            headA = headA.next;
+            lenA--;
+        }
+        while (lenA < lenB) {
+            headB = headB.next;
+            lenB--;
+        }
+        // find the intersection until end
+        while (headA != headB) {
+            headA = headA.next;
+            headB = headB.next;
+        }
+        return headA;
+    }
+    private int length(ListNode node) {
+        int length = 0;
+        while (node != null) {
+            node = node.next;
+            length++;
+        }
+        return length;
+    }
+    public ListNode getIntersectionNode2(ListNode headA, ListNode headB) {
+        //boundary check
+        if(headA == null || headB == null) return null;
+
+        ListNode a = headA;
+        ListNode b = headB;
+
+        //if a & b have different len, then we will stop the loop after second iteration
+        while( a != b){
+            //for the end of first iteration, we just reset the pointer to the head of another linkedlist
+            a = a == null? headB : a.next;
+            b = b == null? headA : b.next;
+        }
+
+        return a;
     }
 
 
