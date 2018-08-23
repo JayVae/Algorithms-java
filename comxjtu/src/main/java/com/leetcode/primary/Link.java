@@ -113,6 +113,18 @@ public class Link {
         }
         return first;
     }
+    public ListNode reverseList2(ListNode head) {
+        ListNode pre = null;
+        ListNode cur = head;
+        while (cur!=null){
+            ListNode next = cur.next;
+
+            cur.next = pre;
+            pre = cur;
+            cur = next;
+        }
+        return pre;
+    }
 
     /**
      * 请判断一个链表是否为回文链表。

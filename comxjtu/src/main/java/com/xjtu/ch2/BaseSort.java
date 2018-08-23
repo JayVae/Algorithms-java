@@ -49,4 +49,14 @@ public abstract class BaseSort{
         }
     }
 
+    public static void shuffle2(int[] arr){
+        int n = arr.length;
+        for (int i = 0; i < n; i++) {
+            int r = i + new Random().nextInt(n-i);
+            int tmp = arr[i];
+            arr[i] = arr[r];
+            arr[r] = tmp;
+        }
+    }
+
 }
