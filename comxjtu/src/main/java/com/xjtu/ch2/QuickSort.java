@@ -33,4 +33,22 @@ public class QuickSort extends BaseSort {
         return j;
     }
 
+    private static int partition(int[] a, int lo, int hi){
+        int i = lo ,j = hi+1;
+        int base = a[lo];
+        while (true){
+            while (base>a[++i]) if (i==hi) break;
+            while (base<a[--j]) if (j==lo) break;
+            if (i>=j) break;
+            int tmp = a[i];
+            a[i] = a[j];
+            a[j] = tmp;
+        }
+        int tmp = a[lo];
+        a[lo] = a[j];
+        a[j] = tmp;
+        return j;
+    }
+
+
 }
