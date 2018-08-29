@@ -24,6 +24,7 @@ public class AtomicTest {
         final BlockingQueue<File> queue = new LinkedBlockingQueue<File>(100);
         // 线程池
         final ExecutorService exec = Executors.newFixedThreadPool(5);
+        final ExecutorService exec2 = Executors.newCachedThreadPool();
         final File root = new File("D:\\ISO");
         // 完成标志
         final File exitFile = new File("");
