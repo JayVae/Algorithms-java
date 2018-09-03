@@ -6,9 +6,7 @@ package com.leetcode.base;
  * @Modified By:
  */
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * 对角线遍历，螺旋矩阵

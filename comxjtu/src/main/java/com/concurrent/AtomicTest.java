@@ -21,6 +21,8 @@ public class AtomicTest {
 
     public static void main(String[] args) {
         // 阻塞队列，能容纳100个文件
+        String arr[] = new String[10];
+        arr[0]="";
         final BlockingQueue<File> queue = new LinkedBlockingQueue<File>(100);
         // 线程池
         final ExecutorService exec = Executors.newFixedThreadPool(5);
