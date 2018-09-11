@@ -1,5 +1,8 @@
 package com.xjtu;
 
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * @Author: Jay
  * @Date: Created in 19:22 2018/5/24
@@ -8,6 +11,17 @@ package com.xjtu;
 public class Test {
 
     public static void main(String[] args) {
+        Integer i = 3;
+        int[][] x[];
+        List<Double> ans = new LinkedList<>();
+        if (ans.contains(0.0));
+        ans.size();
+        if (ans.isEmpty()){}
+        String s= "abcdef";
+        String ss=s.substring(0,2);
+        System.out.println(s);
+        System.out.println(ss);
+        System.out.println("***********************");
         System.out.println('A' - 0);
         System.out.println('Z' - 0);
         byte b = (byte) 130;

@@ -157,6 +157,7 @@ public class Link {
      * @return
      */
     public boolean hasCycle(ListNode head) {
+
         if (head==null || head.next==null) return false;
         ListNode next = head;
         ListNode next2 = head;

@@ -1,4 +1,4 @@
-package com.xjtu;
+package com.leetcode.base;
 
 /**
  * @Author: Jay

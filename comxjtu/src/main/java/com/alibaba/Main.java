@@ -47,6 +47,7 @@ public class Main {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int pnum = Integer.parseInt(input.nextLine().trim());
+
         /**构建点集*/
         Point[] points = new Point[pnum];
         for(int i = 0; i<pnum; i++){
