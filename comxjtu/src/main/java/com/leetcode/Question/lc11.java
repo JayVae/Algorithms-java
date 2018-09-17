@@ -19,7 +19,7 @@ public class lc11 {
         while (hi>lo){
             int area = 0;
             if (height[lo]<height[hi])
-                area = (hi-lo)*height[lo];
+                area = (hi-lo)*height[lo++];
             else
                 area = (hi-lo)*height[hi--];
             if (max<area)
