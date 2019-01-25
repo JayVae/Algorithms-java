@@ -26,7 +26,6 @@ public class Main {
                     nums[i-1][j] = nums[i-1][j]+nums[i][j];
                 }else {
                 }
-
             }
         }
     }

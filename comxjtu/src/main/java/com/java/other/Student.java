@@ -1,4 +1,4 @@
-package com.java;
+package com.java.other;
 
 /**
  * @Author: Jay
