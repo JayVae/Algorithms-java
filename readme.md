@@ -1,3 +1,5 @@
+remember to push and merge
+
 # 2019年秋招互联网公司JAVA笔试题总结+leetcode按算法与数据结构类型总结+java面试知识
 
 写个readme方便阅读吧，希望能帮助到一些人~~~
