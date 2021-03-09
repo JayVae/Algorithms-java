@@ -19,8 +19,7 @@ public class BinarySearch {
          int b = arr.length;
          //循环不变量：[a,b)是一个合法区间
          while (a<b){
-             int m = (a+b)/2;
-
+             int m = a + (b-a)/2;
              if (k<arr[m]){
                  b = m;
              }else if (k > arr[m]){
