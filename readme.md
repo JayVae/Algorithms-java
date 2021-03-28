@@ -1,32 +1,32 @@
 remember to push and merge
 
-# 2019ÄêÇïÕÐ»¥ÁªÍø¹«Ë¾JAVA±ÊÊÔÌâ×Ü½á+leetcode°´Ëã·¨ÓëÊý¾Ý½á¹¹ÀàÐÍ×Ü½á+javaÃæÊÔÖªÊ¶
+# 2019ï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¾JAVAï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü½ï¿½+leetcodeï¿½ï¿½ï¿½ã·¨ï¿½ï¿½ï¿½ï¿½ï¿½Ý½á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½Ü½ï¿½+javaï¿½ï¿½ï¿½ï¿½ÖªÊ¶
 
-Ð´¸öreadme·½±ãÔÄ¶Á°É£¬Ï£ÍûÄÜ°ïÖúµ½Ò»Ð©ÈË~~~
+Ð´ï¿½ï¿½readmeï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½É£ï¿½Ï£ï¿½ï¿½ï¿½Ü°ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ð©ï¿½ï¿½~~~
 * * * * *
-## Ä¿Â¼½á¹¹
-1. com°üÏÂµÄ»ù±¾ÊÇ°´ÕÕ¹«Ë¾Ãû×Ö½øÐÐ·ÖÀàµÄ±ÊÊÔÌâ£¬¸öÈËÄÜÁ¦ÓÐÏÞ\[£þ¡õ£þ£ü£ü]£¬ÓÐÐ©ÌâÄ¿Ã»ÓÐÀ´µÃ¼°Ð´£¬Ö»ÊÇ¼òµ¥Ð´ÁËË¼Â·.
-2. com.java°üÏÂµÄÊÇ×öµÄÒ»Ð©²âÊÔ£¬±ÈÈç£º
-concurrent°üÏÂÊÇÊÔÑé¶à²¢·¢ÖÐµÄÔ­×ÓÀà¡¢CountDownLatch¡¢Ïß³Ì³ØµÈ£»
-DesignPatternsÊÇÉè¼ÆÄ£Ê½£¬Ö»ÊµÏÖÁË¾­³£¿¼µÄ¼ÓÍ¬²½ËøµÄ°²È«µ¥ÀýÄ£Ê½ºÍ¹¤³§·½·¨Ä£Ê½;
-other°üÏÂÊÇÒ»Ð©°üÀ¨·´Éä¡¢DijkstraµÈ£»
-3. com.leetcode°üÏÂÊÇË¢µÄleetcodeCNÌâÄ¿µÄ´ð°¸£º
-* Question°üÏÂÊÇ°´ÕÕÌâÄ¿µÄ±àºÅ»òÕßÃû³ÆÀ´ÕûÀíµÄ£»
-* base°üÏÂÊÇ°´ÕÕ[leetcode-CNÊý¾Ý½á¹¹×¨Ìâ](https://leetcode-cn.com/explore/learn/) ×Ü½áµÄÒ»Ð©´úÂë£¬°üÀ¨Êý×éºÍ×Ö·û´®¡¢Ê÷ºÍÁ´±í£»
-* primary¡¢middle¡¢senior°üÊÇ°´ÕÕ[leetcode-CNÃæÊÔËã·¨×¨Ìâ](https://leetcode-cn.com/explore/interview/) ×Ü½áµÄÒ»Ð©´úÂë£»
-     * ÆäÖÐ£¬primaryÊÇ[³õ¼¶Ëã·¨](https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/) £»
-     * middleÊÇ[ÖÐ¼¶Ëã·¨](https://leetcode-cn.com/explore/interview/card/top-interview-questions-medium/) £»
-	 * seniorÊÇ[¸ß¼¶Ëã·¨](https://leetcode-cn.com/explore/interview/card/top-interview-questions-hard/) ;
-* ²»µÃ²»ËµÒ»ÏÂ£¬Á¦¿ÛÍø°´×¨Ìâ×Ü½áµÄÕâÐ©** ÕæµÄºÜºÃ** £¬´ó¼Ò¿ÉÒÔ¶à¿´¿´£¬ÈÚ»á¹áÍ¨¡£
-4. com.xjtu°üÏÂÊÇ×Ô¼º¸ú×Å **Ëã·¨£¨µÚ4°æ£©** À´Ð´µÄÒ»Ð©°üÀ¨¶þ·Ö²éÕÒ¡¢ÅÅÐòµÈµÄÒ»Ð©´úÂë¡£
-
-* * * * *
-## ÆäËû
-ÁíÍâ£¬×Ô¼ºÒ²ÔÚ²©¿ÍÖÐ¶Ô³£ÓÃµÄËã·¨ÓëÊý¾Ý½á¹¹½øÐÐÁË±Ê¼Ç×Ü½á£¬´ó¼ÒÒ²¿ÉÒÔ²Î¿¼²Î¿¼[javaÃæÊÔËã·¨×Ü½á](https://jayvae.github.io/categories/%E9%9D%A2%E8%AF%95%E7%AE%97%E6%B3%95/)£¬
-Ä¿Â¼ÈçÏÂ£º
-![ÃæÊÔËã·¨×Ü½áÄ¿Â¼](https://raw.githubusercontent.com/JayVae/pictures/master/res/%E9%9D%A2%E8%AF%95%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93%E5%88%86%E7%B1%BB1.jpg)
-
-![ÃæÊÔËã·¨×Ü½áÄ¿Â¼](https://raw.githubusercontent.com/JayVae/pictures/master/res/%E9%9D%A2%E8%AF%95%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%932.jpg)
+## Ä¿Â¼ï¿½á¹¹
+1. comï¿½ï¿½ï¿½ÂµÄ»ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½Õ¹ï¿½Ë¾ï¿½ï¿½ï¿½Ö½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½â£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½]ï¿½ï¿½ï¿½ï¿½Ð©ï¿½ï¿½Ä¿Ã»ï¿½ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½Ð´ï¿½ï¿½Ö»ï¿½Ç¼ï¿½Ð´ï¿½ï¿½Ë¼Â·.
+2. com.javaBasicï¿½ï¿½ï¿½Âµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ð©ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ç£º
+concurrentï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à²¢ï¿½ï¿½ï¿½Ðµï¿½Ô­ï¿½ï¿½ï¿½à¡¢CountDownLatchï¿½ï¿½ï¿½ß³Ì³ØµÈ£ï¿½
+DesignPatternsï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½ï¿½Ö»Êµï¿½ï¿½ï¿½Ë¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½Ä°ï¿½È«ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½Í¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½;
+otherï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ð©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä¡¢Dijkstraï¿½È£ï¿½
+3. com.leetcodeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¢ï¿½ï¿½leetcodeCNï¿½ï¿½Ä¿ï¿½Ä´ð°¸£ï¿½
+* Questionï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½Ä±ï¿½Å»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½
+* baseï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½[leetcode-CNï¿½ï¿½ï¿½Ý½á¹¹×¨ï¿½ï¿½](https://leetcode-cn.com/explore/learn/) ï¿½Ü½ï¿½ï¿½Ò»Ð©ï¿½ï¿½ï¿½ë£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+* primaryï¿½ï¿½middleï¿½ï¿½seniorï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½[leetcode-CNï¿½ï¿½ï¿½ï¿½ï¿½ã·¨×¨ï¿½ï¿½](https://leetcode-cn.com/explore/com.interview/) ï¿½Ü½ï¿½ï¿½Ò»Ð©ï¿½ï¿½ï¿½ë£»
+     * ï¿½ï¿½ï¿½Ð£ï¿½primaryï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨](https://leetcode-cn.com/explore/com.interview/card/top-com.interview-questions-easy/) ï¿½ï¿½
+     * middleï¿½ï¿½[ï¿½Ð¼ï¿½ï¿½ã·¨](https://leetcode-cn.com/explore/com.interview/card/top-com.interview-questions-medium/) ï¿½ï¿½
+	 * seniorï¿½ï¿½[ï¿½ß¼ï¿½ï¿½ã·¨](https://leetcode-cn.com/explore/com.interview/card/top-com.interview-questions-hard/) ;
+* ï¿½ï¿½ï¿½Ã²ï¿½ËµÒ»ï¿½Â£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¨ï¿½ï¿½ï¿½Ü½ï¿½ï¿½ï¿½ï¿½Ð©** ï¿½ï¿½ÄºÜºï¿½** ï¿½ï¿½ï¿½ï¿½Ò¿ï¿½ï¿½Ô¶à¿´ï¿½ï¿½ï¿½ï¿½ï¿½Ú»ï¿½ï¿½Í¨ï¿½ï¿½
+4. com.algorithom4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ **ï¿½ã·¨ï¿½ï¿½ï¿½ï¿½4ï¿½æ£©** ï¿½ï¿½Ð´ï¿½ï¿½Ò»Ð©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö²ï¿½ï¿½Ò¡ï¿½ï¿½ï¿½ï¿½ï¿½Èµï¿½Ò»Ð©ï¿½ï¿½ï¿½ë¡£
 
 * * * * *
-ÓÉÓÚ¸öÈËÄÜÁ¦ÓÐÏÞ£¬ÓÐÎÊÌâ»¹Çë²»Áß´Í½Ì¡£O(¡É_¡É)O¹þ¹þ~
+## ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½â£¬ï¿½Ô¼ï¿½Ò²ï¿½Ú²ï¿½ï¿½ï¿½ï¿½Ð¶Ô³ï¿½ï¿½Ãµï¿½ï¿½ã·¨ï¿½ï¿½ï¿½ï¿½ï¿½Ý½á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½Ë±Ê¼ï¿½ï¿½Ü½á£¬ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½Ô²Î¿ï¿½ï¿½Î¿ï¿½[javaï¿½ï¿½ï¿½ï¿½ï¿½ã·¨ï¿½Ü½ï¿½](https://jayvae.github.io/categories/%E9%9D%A2%E8%AF%95%E7%AE%97%E6%B3%95/)ï¿½ï¿½
+Ä¿Â¼ï¿½ï¿½ï¿½Â£ï¿½
+![ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨ï¿½Ü½ï¿½Ä¿Â¼](https://raw.githubusercontent.com/JayVae/pictures/master/res/%E9%9D%A2%E8%AF%95%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93%E5%88%86%E7%B1%BB1.jpg)
+
+![ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨ï¿½Ü½ï¿½Ä¿Â¼](https://raw.githubusercontent.com/JayVae/pictures/master/res/%E9%9D%A2%E8%AF%95%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%932.jpg)
+
+* * * * *
+ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â»¹ï¿½ë²»ï¿½ß´Í½Ì¡ï¿½O(ï¿½ï¿½_ï¿½ï¿½)Oï¿½ï¿½ï¿½ï¿½~

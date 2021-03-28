@@ -6,7 +6,7 @@ package com.leetcode.Question;
  * @Modified By:
  */
 
-import com.xjtu.ch1.Stack;
+import com.algorithom4.ch1.Stack;
 
 import java.util.HashSet;
 import java.util.Set;

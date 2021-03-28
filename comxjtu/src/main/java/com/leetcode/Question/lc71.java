@@ -1,6 +1,6 @@
 package com.leetcode.Question;
 
-import com.xjtu.ch1.Stack;
+import com.algorithom4.ch1.Stack;
 
 import java.util.ArrayList;
 import java.util.List;
