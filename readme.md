@@ -1,32 +1,34 @@
-remember to push and merge
+# 互联网公司JAVA笔试题总结+leetcode按算法与数据结构类型总结+java面试知识（包括高并发知识）
 
-# 2019�����л�������˾JAVA�������ܽ�+leetcode���㷨�����ݽṹ�����ܽ�+java����֪ʶ
-
-д��readme�����Ķ��ɣ�ϣ���ܰ�����һЩ��~~~
+写个简短的readme方便阅读吧，希望能帮助到一些人~~~
 * * * * *
-## Ŀ¼�ṹ
-1. com���µĻ����ǰ��չ�˾���ֽ��з���ı����⣬������������\[����������]����Щ��Ŀû�����ü�д��ֻ�Ǽ�д��˼·.
-2. com.javaBasic���µ�������һЩ���ԣ����磺
-concurrent����������ಢ���е�ԭ���ࡢCountDownLatch���̳߳صȣ�
-DesignPatterns�����ģʽ��ֻʵ���˾������ļ�ͬ�����İ�ȫ����ģʽ�͹�������ģʽ;
-other������һЩ�������䡢Dijkstra�ȣ�
-3. com.leetcode������ˢ��leetcodeCN��Ŀ�Ĵ𰸣�
-* Question�����ǰ�����Ŀ�ı�Ż�������������ģ�
-* base�����ǰ���[leetcode-CN���ݽṹר��](https://leetcode-cn.com/explore/learn/) �ܽ��һЩ���룬����������ַ�������������
-* primary��middle��senior���ǰ���[leetcode-CN�����㷨ר��](https://leetcode-cn.com/explore/com.interview/) �ܽ��һЩ���룻
-     * ���У�primary��[�����㷨](https://leetcode-cn.com/explore/com.interview/card/top-com.interview-questions-easy/) ��
-     * middle��[�м��㷨](https://leetcode-cn.com/explore/com.interview/card/top-com.interview-questions-medium/) ��
-	 * senior��[�߼��㷨](https://leetcode-cn.com/explore/com.interview/card/top-com.interview-questions-hard/) ;
-* ���ò�˵һ�£���������ר���ܽ����Щ** ��ĺܺ�** ����ҿ��Զ࿴�����ڻ��ͨ��
-4. com.algorithom4�������Լ����� **�㷨����4�棩** ��д��һЩ�������ֲ��ҡ�����ȵ�һЩ���롣
+## 目录结构
+1. com.company包下的基本是按照公司名字进行分类的笔试题，个人能力有限\[￣□￣｜｜]，有些题目没有来得及写，只是简单写了思路.
+2. com.leetcode包下是刷的leetcodeCN题目的答案：
+    * Question包下是按照题目的编号或者名称来整理的；
+    * base包下是按照[leetcode-CN数据结构专题](https://leetcode-cn.com/explore/learn/) 总结的一些代码，包括数组和字符串、树和链表；
+    * primary、middle、senior包是按照[leetcode-CN面试算法专题](https://leetcode-cn.com/explore/interview/) 总结的一些代码；
+        * 其中，primary是[初级算法](https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/) ；
+        * middle是[中级算法](https://leetcode-cn.com/explore/interview/card/top-interview-questions-medium/) ；
+	    * senior是[高级算法](https://leetcode-cn.com/explore/interview/card/top-interview-questions-hard/) ;
+    * 不得不说一下，力扣网按专题总结的这些** 真的很好** ，大家可以多看看，融会贯通。
 
-* * * * *
-## ����
-���⣬�Լ�Ҳ�ڲ����жԳ��õ��㷨�����ݽṹ�����˱ʼ��ܽᣬ���Ҳ���Բο��ο�[java�����㷨�ܽ�](https://jayvae.github.io/categories/%E9%9D%A2%E8%AF%95%E7%AE%97%E6%B3%95/)��
-Ŀ¼���£�
-![�����㷨�ܽ�Ŀ¼](https://raw.githubusercontent.com/JayVae/pictures/master/res/%E9%9D%A2%E8%AF%95%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93%E5%88%86%E7%B1%BB1.jpg)
-
-![�����㷨�ܽ�Ŀ¼](https://raw.githubusercontent.com/JayVae/pictures/master/res/%E9%9D%A2%E8%AF%95%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%932.jpg)
+3. com.interview包下是递归和循环控制的实例
+4. com.concurrency包为Java并发相关的程序，具体内容移植到springBoot项目，参见[并发面试基础](https://github.com/JayVae/concurrencyLearning)
+5. com.algorithom4包下是自己跟着 **算法（第4版）** 来写的一些包括二分查找、排序等的一些代码。
+6. com.javaBasic包下的是做的一些测试，比如：
+    * concurrent包下是试验多并发中的原子类、CountDownLatch、线程池等；
+    * DesignPatterns是设计模式，只实现了经常考的加同步锁的安全单例模式和工厂方法模式;
+    * other包下是一些包括反射、Dijkstra等；
+   
 
 * * * * *
-���ڸ����������ޣ������⻹�벻�ߴͽ̡�O(��_��)O����~
+## 其他
+另外，自己也在博客中对常用的算法与数据结构进行了笔记总结，大家也可以参考参考[java面试算法总结](https://jayvae.github.io/categories/%E9%9D%A2%E8%AF%95%E7%AE%97%E6%B3%95/)，
+目录如下：
+![面试算法总结目录](https://raw.githubusercontent.com/JayVae/pictures/master/res/%E9%9D%A2%E8%AF%95%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93%E5%88%86%E7%B1%BB1.jpg)
+
+![面试算法总结目录](https://raw.githubusercontent.com/JayVae/pictures/master/res/%E9%9D%A2%E8%AF%95%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%932.jpg)
+
+* * * * *
+由于个人能力有限，有问题还请不吝赐教。O(∩_∩)O哈哈~
