@@ -11,14 +11,15 @@
         * 其中，primary是[初级算法](https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/) ；
         * middle是[中级算法](https://leetcode-cn.com/explore/interview/card/top-interview-questions-medium/) ；
 	    * senior是[高级算法](https://leetcode-cn.com/explore/interview/card/top-interview-questions-hard/) ;
-    * 不得不说一下，力扣网按专题总结的这些** 真的很好** ，大家可以多看看，融会贯通。
+	* everyday包下为leetcode上的每日一题。
+    * 不得不说一下，力扣网按专题总结的这些**真的很好** ，大家可以多看看，融会贯通。
 
 3. com.interview包下是递归和循环控制的实例
 4. com.concurrency包为Java并发相关的程序，具体内容移植到springBoot项目，参见[并发面试基础](https://github.com/JayVae/concurrencyLearning)
 5. com.algorithom4包下是自己跟着 **算法（第4版）** 来写的一些包括二分查找、排序等的一些代码。
 6. com.javaBasic包下的是做的一些测试，比如：
     * concurrent包下是试验多并发中的原子类、CountDownLatch、线程池等；
-    * DesignPatterns是设计模式，只实现了经常考的加同步锁的安全单例模式和工厂方法模式;
+    * DesignPatterns是设计模式，分别按照创建型、结构型、行为型进行了实现;
     * other包下是一些包括反射、Dijkstra等；
    
 
