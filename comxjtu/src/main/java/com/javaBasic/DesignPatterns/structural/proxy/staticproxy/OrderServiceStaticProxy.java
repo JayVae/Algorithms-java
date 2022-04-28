@@ -1,9 +1,10 @@
 package com.javaBasic.DesignPatterns.structural.proxy.staticproxy;
 
-import com.geely.design.pattern.structural.proxy.IOrderService;
-import com.geely.design.pattern.structural.proxy.Order;
-import com.geely.design.pattern.structural.proxy.OrderServiceImpl;
-import com.geely.design.pattern.structural.proxy.db.DataSourceContextHolder;
+
+import com.javaBasic.DesignPatterns.structural.proxy.IOrderService;
+import com.javaBasic.DesignPatterns.structural.proxy.Order;
+import com.javaBasic.DesignPatterns.structural.proxy.OrderServiceImpl;
+import com.javaBasic.DesignPatterns.structural.proxy.db.DataSourceContextHolder;
 
 /**
  * Created by geely
