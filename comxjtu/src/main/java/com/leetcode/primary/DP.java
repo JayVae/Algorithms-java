@@ -57,6 +57,16 @@ public class DP {
         return profit;
     }
 
+    public int maxProfit2(int[] prices) {
+        int max = 0;
+        int[] dp = new int[prices.length];
+        for (int i = 1; i < prices.length; i++) {
+            dp[i] = Math.max(prices[i]-prices[i-1]+dp[i-1],dp[i]);
+            if (dp[i]>max) max = dp[i];
+        }
+        return max;
+    }
+
     /**
      * 给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
      * 从上到下分别是O(N3),O(N2),分治法O(NlogN)，和递归

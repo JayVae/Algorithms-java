@@ -10,30 +10,59 @@ import java.util.Arrays;
  */
 public class DP {
 
+
+    /**
+     *
+     * @Param
+     * @Description //给定一个非负整数数组 nums ，你最初位于数组的 第一个下标 。
+     * 数组中的每个元素代表你在该位置可以跳跃的最大长度。
+     * 判断你是否能够到达最后一个下标。
+     * way1:贪心：依次遍历数组中的每一个位置，并实时维护 最远可以到达的位置。
+     * @Date 21:38 2022/4/29
+     * @return
+     **/
     public boolean canJump(int[] nums) {
-        if (nums.length<2) return true;
-        int n = nums.length-1;
-        while(n>0){
-            boolean flag = false;
-            int max=0;
-            for (int i = n-1; i >=0; i--) {
-                if (i==0){
-                    if (n-i<=nums[i]){
-                        flag = true;
-                        max = i;
-                    }
-                }else if (n-i<=nums[i]){
-                    flag = true;
-                    max = i;
+        int n = nums.length;
+        int rightmost = 0;
+        for (int i = 0; i < n; ++i) {
+            if (i <= rightmost) {
+                rightmost = Math.max(rightmost, i + nums[i]);
+                if (rightmost >= n - 1) {
+                    return true;
                 }
             }
-            if (flag){
-                n=max;
-            }else {
-                return false;
+        }
+        return false;
+    }
+
+    /**
+     *
+     * @Param
+     * @Description //way2:从后往前，用dp数组记录当前位置能否由最后到达。
+     * @Date 22:41 2022/4/29
+     * @return
+     **/
+    public boolean canJump2(int[] nums) {
+        int length = nums.length;
+        boolean[] dp = new boolean[length];
+        dp[length-1] = true;
+        for (int i = length-1; i > 0; i--) {
+            if (dp[i]){
+                for (int j = 0; j < i; j++) {
+                    if (dp[0]){
+                        return true;
+                    }
+                    if (dp[j]){
+                        continue;
+                    }
+                    if (nums[j]+j >= i){
+                        dp[j] = true;
+                    }
+                }
             }
         }
-        return true;
+
+        return dp[0];
     }
 
     /**
@@ -64,11 +93,18 @@ public class DP {
 
     }
 
+
+    /**
+     * @Description 给你一个整数数组 coins ，表示不同面额的硬币；以及一个整数 amount ，表示总金额。
+    计算并返回可以凑成总金额所需的 最少的硬币个数 。如果没有任何一种硬币组合能组成总金额，返回 -1 。
+     * @Date 22:56 2022/4/29
+     * @return
+     **/
     public int coinChange(int[] coins, int amount) {
         if(amount<1) return 0;
         int[] dp = new int[amount+1];
-        for (int i = 1;i<=amount;i++)
-            dp[i] = Integer.MAX_VALUE;
+        Arrays.fill(dp,Integer.MAX_VALUE);
+        dp[0] = 0;
         for (int i = 0;i<coins.length;i++){
             for (int j = coins[i];j<=amount;j++)
                 if (dp[j-coins[i]]!=Integer.MAX_VALUE)
