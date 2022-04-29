@@ -4,8 +4,9 @@ import java.util.Arrays;
 
 /**
  * @Author: Jay
- * @Date: Created in 17:50 2018/6/9
+ * @Date:
  * @Modified By:
+ * @Description:  来源力扣中级算法之动态规划问题，https://leetcode.cn/leetbook/read/top-interview-questions-medium/xvb8zs/
  */
 public class DP {
 

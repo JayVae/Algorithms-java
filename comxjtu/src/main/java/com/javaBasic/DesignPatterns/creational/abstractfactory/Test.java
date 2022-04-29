@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.creational.abstractfactory;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class Test {
     public static void main(String[] args) {

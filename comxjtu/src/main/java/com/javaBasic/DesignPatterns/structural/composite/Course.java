@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.structural.composite;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class Course extends CatalogComponent {
     private String name;

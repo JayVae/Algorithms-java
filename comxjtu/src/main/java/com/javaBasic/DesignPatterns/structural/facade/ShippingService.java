@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.structural.facade;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class ShippingService {
     public String shipGift(PointsGift pointsGift){

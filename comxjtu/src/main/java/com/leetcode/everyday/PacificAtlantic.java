@@ -33,4 +33,8 @@ public class PacificAtlantic {
 
         return resultList;
     }
+
+    public static void main(String[] args) {
+
+    }
 }

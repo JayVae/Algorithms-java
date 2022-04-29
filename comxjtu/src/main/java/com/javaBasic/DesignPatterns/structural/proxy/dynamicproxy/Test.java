@@ -6,7 +6,7 @@ import com.javaBasic.DesignPatterns.structural.proxy.Order;
 import com.javaBasic.DesignPatterns.structural.proxy.OrderServiceImpl;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class Test {
     public static void main(String[] args) {

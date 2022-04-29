@@ -7,7 +7,7 @@ import com.javaBasic.DesignPatterns.structural.proxy.OrderServiceImpl;
 import com.javaBasic.DesignPatterns.structural.proxy.db.DataSourceContextHolder;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class OrderServiceStaticProxy {
     private IOrderService iOrderService;

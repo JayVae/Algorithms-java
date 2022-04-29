@@ -1,12 +1,12 @@
 package com.javaBasic.DesignPatterns.creational.singleton;
 
 /**
- * Created by geely
+ * Created by js
  */
 public enum EnumInstance {
     INSTANCE{
         protected  void printTest(){
-            System.out.println("Geely Print Test");
+            System.out.println("js Print Test");
         }
     };
     protected abstract void printTest();

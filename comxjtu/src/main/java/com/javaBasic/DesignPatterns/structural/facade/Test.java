@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.structural.facade;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class Test {
     public static void main(String[] args) {

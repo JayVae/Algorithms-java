@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.structural.decorator.v1;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class Battercake {
     protected String getDesc(){

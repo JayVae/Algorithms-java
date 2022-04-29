@@ -16,11 +16,11 @@ public class ReadXML1 {
             DocumentBuilderFactory dFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = dFactory.newDocumentBuilder();
             Document doc;
-            doc = builder.parse(new File("H:\\workspace_idea\\javapattern\\src\\main\\java\\com\\geely\\design\\pattern\\creational\\factorymethod\\config1.xml"));
+            doc = builder.parse(new File("H:\\workspace_idea\\javapattern\\src\\main\\java\\com\\js\\design\\pattern\\creational\\factorymethod\\config1.xml"));
             //获取包含类名的文本节点
             NodeList nl = doc.getElementsByTagName("className");
             Node classNode = nl.item(0).getFirstChild();
-            String cName = "com.geely.design.pattern.creational.factorymethod." + classNode.getNodeValue();
+            String cName = "com.js.design.pattern.creational.factorymethod." + classNode.getNodeValue();
             //System.out.println("新类名："+cName);
             //通过类名生成实例对象并将其返回
             Class<?> c = Class.forName(cName);

@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.structural.facade;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class GiftExchangeService {
     private QualifyService qualifyService = new QualifyService();

@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.creational.prototype.abstractprototype;
 
 /**
- * Created by geely
+ * Created by js
  */
 public abstract class A implements Cloneable{
     @Override

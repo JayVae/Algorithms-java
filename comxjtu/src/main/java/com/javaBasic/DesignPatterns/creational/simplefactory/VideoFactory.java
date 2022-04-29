@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.creational.simplefactory;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class VideoFactory {
     public Video getVideo(Class c){

@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.creational.factorymethod;
 
 /**
- * Created by geely
+ * Created by js
  */
 public abstract class VideoFactory {
 

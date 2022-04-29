@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.behavioral.templatemethod;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class FECourse extends ACourse {
     private boolean needWriteArticleFlag = false;

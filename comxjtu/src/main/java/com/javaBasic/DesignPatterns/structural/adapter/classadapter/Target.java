@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.structural.adapter.classadapter;
 
 /**
- * Created by geely
+ * Created by js
  */
 public interface  Target {
     void request();

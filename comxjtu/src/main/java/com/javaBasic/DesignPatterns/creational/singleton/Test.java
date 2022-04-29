@@ -11,7 +11,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class Test {
     public static void main(String[] args) throws IOException, ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
@@ -56,7 +56,7 @@ public class Test {
 //        Constructor constructor = objectClass.getDeclaredConstructor(String.class,int.class);
 //
 //        constructor.setAccessible(true);
-//        EnumInstance instance = (EnumInstance) constructor.newInstance("Geely",666);
+//        EnumInstance instance = (EnumInstance) constructor.newInstance("js",666);
 
 
 //

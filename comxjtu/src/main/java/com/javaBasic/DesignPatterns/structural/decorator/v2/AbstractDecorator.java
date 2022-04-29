@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.structural.decorator.v2;
 
 /**
- * Created by geely
+ * Created by js
  */
 public abstract class AbstractDecorator extends ABattercake {
     private ABattercake aBattercake;

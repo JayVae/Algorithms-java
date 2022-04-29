@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.creational.prototype.abstractprototype;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class B extends A {
     public static void main(String[] args) throws CloneNotSupportedException {

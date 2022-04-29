@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.creational.builder.v2;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class Course {
 

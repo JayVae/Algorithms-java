@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.structural.flyweight;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class Manager implements Employee {
     @Override

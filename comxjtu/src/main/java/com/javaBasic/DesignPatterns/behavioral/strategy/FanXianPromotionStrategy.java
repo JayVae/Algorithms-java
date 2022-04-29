@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.behavioral.strategy;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class FanXianPromotionStrategy implements PromotionStrategy{
     @Override

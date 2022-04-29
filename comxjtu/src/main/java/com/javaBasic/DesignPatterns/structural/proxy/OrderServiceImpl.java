@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.structural.proxy;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class OrderServiceImpl implements IOrderService {
     private IOrderDao iOrderDao;

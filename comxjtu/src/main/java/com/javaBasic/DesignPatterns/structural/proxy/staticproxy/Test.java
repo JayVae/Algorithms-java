@@ -4,7 +4,7 @@ package com.javaBasic.DesignPatterns.structural.proxy.staticproxy;
 import com.javaBasic.DesignPatterns.structural.proxy.Order;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class Test {
     public static void main(String[] args) {

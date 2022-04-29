@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class  CourseCatalog extends CatalogComponent {
     private List<CatalogComponent> items = new ArrayList<CatalogComponent>();

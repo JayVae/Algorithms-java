@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.structural.adapter;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class AC220 {
     public int outputAC220V(){

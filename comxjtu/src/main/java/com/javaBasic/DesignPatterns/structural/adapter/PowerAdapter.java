@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.structural.adapter;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class PowerAdapter implements DC5{
     private AC220 ac220 = new AC220();

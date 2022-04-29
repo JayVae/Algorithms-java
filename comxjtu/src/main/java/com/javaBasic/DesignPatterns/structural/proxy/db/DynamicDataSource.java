@@ -3,7 +3,7 @@ package com.javaBasic.DesignPatterns.structural.proxy.db;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class DynamicDataSource extends AbstractRoutingDataSource {
     @Override
@@ -82,7 +82,7 @@ public class DynamicDataSource extends AbstractRoutingDataSource {
 //    </bean>
 
 
-//	<bean id="dataSource" class="com.geely.design.pattern.structural.proxy.db.DynamicDataSource">
+//	<bean id="dataSource" class="com.js.design.pattern.structural.proxy.db.DynamicDataSource">
 //		<property name="targetDataSources">
 //			<map key-type="java.lang.String">
 //				<entry value-ref="db0" key="db0"></entry>

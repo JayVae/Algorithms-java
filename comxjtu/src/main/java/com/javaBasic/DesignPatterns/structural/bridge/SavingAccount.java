@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.structural.bridge;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class SavingAccount implements Account {
     @Override

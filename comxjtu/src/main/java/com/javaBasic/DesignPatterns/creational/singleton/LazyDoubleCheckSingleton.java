@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.creational.singleton;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class LazyDoubleCheckSingleton {
     private volatile static LazyDoubleCheckSingleton lazyDoubleCheckSingleton = null;

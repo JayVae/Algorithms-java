@@ -1,7 +1,7 @@
 package com.javaBasic.DesignPatterns.structural.bridge;
 
 /**
- * Created by geely
+ * Created by js
  */
 public class ABCBank extends Bank {
     public ABCBank(Account account) {
