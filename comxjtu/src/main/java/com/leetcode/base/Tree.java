@@ -5,15 +5,14 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * @Author: Jay
- * @Date: Created in 17:06 2018/6/1
- * @Modified By:
+ * @Date:
  */
 
 /**
- * 遍历方法及通用方法；
- * 根据一棵树的中序遍历与后序遍历（前序）构造二叉树。
- * 每个节点的右向指针,填充同一层的兄弟节点
- * 二叉树的序列与反序列化Codec
+ * 二叉树的基本方法：
+ * 1.遍历方法及通用方法；
+ * 2.根据一棵树的中序遍历与后序遍历（前序）构造二叉树。
+ * 3.每个节点的右向指针,填充同一层的兄弟节点
  */
 public class Tree {
     /**
@@ -22,19 +21,20 @@ public class Tree {
      * @param root
      * @return
      */
-    List<Integer> list = new LinkedList<>();
+
 
     public List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> list = new LinkedList<>();
         if (root == null) return list;
-        preorder(root);
+        preorder(root, list);
         return list;
     }
 
-    private void preorder(TreeNode root) {
+    private void preorder(TreeNode root, List<Integer> list) {
         if (root == null) return;
         list.add(root.val);
-        preorder(root.left);
-        preorder(root.right);
+        preorder(root.left, list);
+        preorder(root.right, list);
     }
 
     /**
@@ -44,17 +44,18 @@ public class Tree {
      * @return
      */
     public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> list = new LinkedList<>();
         if (root == null) return list;
-        inorder(root);
+        inorder(root, list);
 
         return list;
     }
 
-    private void inorder(TreeNode root) {
+    private void inorder(TreeNode root, List<Integer> list) {
         if (root == null) return;
-        inorder(root.left);
+        inorder(root.left, list);
         list.add(root.val);
-        inorder(root.right);
+        inorder(root.right, list);
     }
 
     /**
@@ -64,14 +65,15 @@ public class Tree {
      * @return
      */
     public List<Integer> postorderTraversal(TreeNode root) {
-        postorder(root);
+        List<Integer> list = new LinkedList<>();
+        postorder(root, list);
         return list;
     }
 
-    private void postorder(TreeNode root) {
+    private void postorder(TreeNode root, List<Integer> list) {
         if (root == null) return;
-        postorder(root.left);
-        postorder(root.right);
+        postorder(root.left,list);
+        postorder(root.right, list);
         list.add(root.val);
     }
 
@@ -339,68 +341,4 @@ public class Tree {
     }
 }
 
-class Codec {
 
-    //tools for reconstruct treenode
-    Queue<TreeNode> queue = new LinkedList<TreeNode>();
-    boolean isLeft = true;
-    TreeNode root = null;
-
-    // Encodes a tree to a single string.
-    public String serialize(TreeNode root) {
-        StringBuilder builder = new StringBuilder();
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
-
-        while(!queue.isEmpty()){
-            TreeNode top = queue.poll();
-            if(top == null){
-                builder.append('#');
-                builder.append(',');
-            }
-            else{
-                builder.append(top.val);
-                builder.append(',');//以,作为分割
-                queue.offer(top.left);
-                queue.offer(top.right);
-            }
-        }
-        return builder.toString();
-    }
-
-    // Decodes your encoded data to tree.
-    public TreeNode deserialize(String data) {
-        String[] strs = data.split(",");
-        int size = strs.length;
-
-        for(int i = 0;i<size;i++){
-            String curstr = strs[i];
-            if(curstr.length() == 0)
-                continue;
-            else if(curstr.equals("#")){
-                appendNodeToTree(null);
-            }else{
-                int val = Integer.parseInt(curstr);
-                appendNodeToTree(new TreeNode(val));
-            }
-        }
-        return root;
-    }
-    private void appendNodeToTree(TreeNode node){
-        if(root == null){
-            root = node;
-            queue.offer(node);
-            return;
-        }
-        TreeNode top = queue.peek();
-        if(isLeft){
-            top.left = node;
-        }else{
-            top.right = node;
-            queue.poll();
-        }
-        isLeft = !isLeft;//取反
-        if(node != null)
-            queue.offer(node);
-    }
-}
