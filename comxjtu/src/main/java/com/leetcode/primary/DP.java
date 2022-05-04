@@ -1,5 +1,7 @@
 package com.leetcode.primary;
 
+import java.util.Arrays;
+
 /**
  * @Author: Jay
  * @Date: Created in 10:43 2018/5/31
@@ -188,71 +190,60 @@ public class DP {
      * @return
      */
     public int maxSubArray3(int[] nums) {
-        if (nums==null || nums.length==0) return 0;
-        if (nums.length==1) return nums[0];
-        int len = nums.length;
-        int maxSum = Integer.MIN_VALUE;
-        int cnt = 0;
-        for (int i = 0; i < len; i++) {
-            if (nums[i]>maxSum) maxSum=nums[i];
-            if (nums[i]<0) cnt++;
-            else break;
+        if (nums.length<2) return nums[0];
+        int max = nums[0], dp = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            dp = dp>0  ? dp+nums[i] : nums[i];
+            if (dp>max) max=dp;
         }
-        if (cnt==len) return maxSum;
-        int sum = 0;
-        for (int i = 0; i < len; i++) {
-            sum += nums[i];
-            if (sum>maxSum)
-                maxSum = sum;
-            else if (sum<0)
-                sum =0;
-        }
-        return maxSum;
+        return max;
     }
 
     /**
      * 你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
      给定一个代表每个房屋存放金额的非负整数数组，计算你在不触动警报装置的情况下，能够偷窃到的最高金额。
+     两种方法：
+     递归
+     迭代
      * @param nums
      * @return
      */
     public int rob(int[] nums) {
         if (nums==null||nums.length==0) return 0;
         if (nums.length==1) return nums[0];
-        int len = nums.length;
-        return maxRob(nums,len-1);
+        int[] dp = new int[nums.length];
+        Arrays.fill(dp,-1);
+        return maxRob(nums,nums.length-1, dp);
     }
-    private int maxRob(int[] nums, int n){
+    private int maxRob(int[] nums, int n, int[] dp){
         if (n==0) return nums[0];
         if (n==1) return nums[1]>nums[0]?nums[1]:nums[0];
-        int r1 = maxRob(nums,n-1);
-        int r2 = maxRob(nums,n-2)+nums[n];
-        return r1>r2?r1:r2;
+        if (dp[n-1]==-1) dp[n-1] = maxRob(nums,n-1, dp);
+        if (dp[n-2]==-1) dp[n-2] = maxRob(nums,n-2, dp);
+        int choose = dp[n-2]+nums[n];
+        return dp[n-1]>choose?dp[n-1]:choose;
     }
     public int rob2(int[] nums) {
-        if (nums==null||nums.length==0) return 0;
-        if (nums.length==1) return nums[0];
-        int len = nums.length;
-        int dp1 = nums[0];
-        int dp2 = nums[1]>nums[0]?nums[1]:nums[0];
-        if (len==2) return dp2;
-        for (int i = 2; i < len; i++) {
-            if (dp1+nums[i]>dp2){
-                int tmp = dp2;
-                dp2 = dp1+nums[i];
-                dp1 = tmp;
-            }else {
-
-            }
+        if (nums.length<2) return nums[0];
+        int dp0, dp1,dp2;
+        //或者直接使用dp数组也行，这里节省空间。
+        dp0 = nums[0];
+        dp1 = nums[1]>nums[0] ? nums[1] : nums[0];
+        dp2 = dp1;
+        for (int i = 2; i < nums.length; i++) {
+            dp2 = Math.max(nums[i]+dp0, dp1);
+            dp0 = dp1;
+            dp1 = dp2;
         }
-        return dp1>dp2?dp1:dp2;
+        return dp2;
     }
 
     public static void main(String[] args){
         DP dp = new DP();
-        System.out.println(dp.climbStairs(80));
-        int ans = dp.maxSubArray2(new int[]{-1,-6,-9,4,-8,5,-4,2,-1,1,-8,0,1,3,1});
-        System.out.println(dp.maxSubArray2(new int[]{-1,-6,-9,4,-8,5,-4,2,-1,1,-8,0,1,3,1}));;
-        int a = dp.rob2(new int[]{1,2,3,1});
+//        System.out.println(dp.climbStairs(80));
+//        int ans = dp.maxSubArray2(new int[]{-1,-6,-9,4,-8,5,-4,2,-1,1,-8,0,1,3,1});
+//        System.out.println(dp.maxSubArray2(new int[]{-1,-6,-9,4,-8,5,-4,2,-1,1,-8,0,1,3,1}));;
+        int a = dp.rob(new int[]{2,7,9,3,1});
+        System.out.println(a);
     }
 }

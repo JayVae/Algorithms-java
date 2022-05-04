@@ -37,6 +37,10 @@ public class Backpacking {
         return result;
     }
 
+    public List<String> letterCombinations2(String digits) {
+
+    }
+
     /**
      * lc46
      * 全排列:
