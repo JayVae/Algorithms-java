@@ -38,7 +38,27 @@ public class Backpacking {
     }
 
     public List<String> letterCombinations2(String digits) {
+        if (digits == null) return null;
+        List<String> result = new LinkedList<>();
+        if (digits.length() ==0) return result;
 
+        String[] dict = new String[]{"abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
+        backtrack(result, digits, dict,0, new StringBuilder());
+        return result;
+    }
+
+    private void backtrack(List<String> result, String digits, String[] dict, int itrDigits, StringBuilder stringBuilder) {
+        if (itrDigits==digits.length()){
+            result.add(stringBuilder.toString());
+            return;
+        }
+        String string = dict[digits.charAt(itrDigits)-'2'];
+        for (int i = 0; i < string.length(); i++) {
+            int size = stringBuilder.length();
+            stringBuilder.append(string.charAt(i));
+            backtrack(result, digits,dict,itrDigits+1, stringBuilder);
+            stringBuilder.delete(size,size+1);
+        }
     }
 
     /**
@@ -395,13 +415,14 @@ public class Backpacking {
     }
 
     public static void main(String[] args){
-        int i=0;
-        String tmp = Integer.toBinaryString(i);
-        System.out.println(tmp.length());
-        String tmp2 = Integer.toBinaryString(7);
-        System.out.println(tmp2.length());
-        int[] nums = new int[]{1,2,3};
+//        int i=0;
+//        String tmp = Integer.toBinaryString(i);
+//        System.out.println(tmp.length());
+//        String tmp2 = Integer.toBinaryString(7);
+//        System.out.println(tmp2.length());
+//        int[] nums = new int[]{1,2,3};
         Backpacking bp = new Backpacking();
-        List<List<Integer>> result=bp.subsets(nums);
+//        List<List<Integer>> result=bp.subsets(nums);
+        List<String> result = bp.letterCombinations2("23");
     }
 }
