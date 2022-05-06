@@ -1,5 +1,7 @@
 package com.leetcode.middle;
 
+import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -10,7 +12,7 @@ import java.util.List;
  * @Date: Created in 20:40 2018/6/13
  * @Modified By:
  */
-public class Backpacking {
+public class Backtracking {
     /**
      * 电话号码的字母组合
      * @param digits
@@ -69,15 +71,15 @@ public class Backpacking {
      * @return
      */
     public List<List<Integer>> permute(int[] nums) {
-        List<List<Integer>> list = new ArrayList<>();
+        List<List<Integer>> list = new LinkedList<>();
         // Arrays.sort(nums); // not necessary
-        backtrack(list, new ArrayList<Integer>(), nums);
+        backtrack(list, new LinkedList<>(), nums);
         return list;
     }
 
     private void backtrack(List<List<Integer>> list, List<Integer> tempList, int [] nums){
         if(tempList.size() == nums.length){
-            list.add(new ArrayList<>(tempList));
+            list.add(new LinkedList<>(tempList));
         } else{
             for(int i = 0; i < nums.length; i++){
                 if(tempList.contains(nums[i])) continue; // element already exists, skip
@@ -95,18 +97,20 @@ public class Backpacking {
      * @return
      */
     public List<List<Integer>> permuteUnique(int[] nums) {
-        List<List<Integer>> list = new ArrayList<>();
+        List<List<Integer>> list = new LinkedList<>();
         Arrays.sort(nums);
-        backtrack(list, new ArrayList<>(), nums, new boolean[nums.length]);
+        backtrack(list, new LinkedList<>(), nums, new boolean[nums.length]);
         return list;
     }
 
     private void backtrack(List<List<Integer>> list, List<Integer> tempList, int [] nums, boolean [] used){
-        if(tempList.size() == nums.length){
-            list.add(new ArrayList<>(tempList));
-        } else{
-            for(int i = 0; i < nums.length; i++){
-                if(used[i] || i > 0 && nums[i] == nums[i-1] && !used[i - 1]) continue;
+        if(tempList.size() == nums.length) list.add(new LinkedList<>(tempList));
+
+        for(int i = 0; i < nums.length; i++){
+            //若在同一层已经遍历过（就是循环过了），则跳过这次
+            if(i > 1 && nums[i] == nums[i-1] && !used[i - 1]) continue;
+            //这个if判断类似于全排列中的if(tempList.contains(nums[i]))，不能漏掉
+            if (!used[i]){
                 used[i] = true;
                 tempList.add(nums[i]);
                 backtrack(list, tempList, nums, used);
@@ -122,26 +126,23 @@ public class Backpacking {
      * @param k
      * @return
      */
-    List<List<Integer>> list = new ArrayList<>();
     public List<List<Integer>> combine(int n, int k) {
-
-        if (n<1 || k<1 || n<k) return list;
-        // Arrays.sort(nums); // not necessary
-        backtrack(n, k,1, new ArrayList<Integer>());
-        return list;
+        List<List<Integer>> result = new LinkedList<>();
+        backtrack2(result, new LinkedList<>(), n, k, 1);
+        return result;
     }
 
-    private void backtrack(int n, int k, int start, ArrayList<Integer> ans) {
-        if (ans.size()==k){
-            list.add(new ArrayList<>(ans));
+    //i代表的是当前遍历到的节点，每个节点深度遍历的时候只遍历后面的节点
+    private void backtrack2(List<List<Integer>> result, List<Integer> list, int n, int k, int i) {
+        if (list.size()==k){
+            result.add(new LinkedList<>(list));
             return;
         }
-//        使用剪枝优化，将i<=n 改为i<= n-(k-ans.size)+1
-//        for (int i = start; i <= n; i++) {
-        for (int i = start; i <= n-(k-ans.size())+1; i++) {
-            ans.add(i);
-            backtrack(n,k,i+1,ans);
-            ans.remove(ans.size()-1);
+        for (int j = i; j < n+1; j++) {
+            //不用判断是否遍历过，之前的都遍历过了
+            list.add(j);
+            backtrack2(result, list, n, k, j+1);
+            list.remove(list.size() - 1);
         }
     }
 
@@ -242,22 +243,23 @@ public class Backpacking {
      * @return
      */
     public List<String> generateParenthesis(int n) {
-        List<String> list = new ArrayList<String>();
-        backtrack(list, "", 0, 0, n);
+        List<String> list = new LinkedList<>();
+        backtrack(list, new StringBuilder(), 0, 0, n);
         return list;
     }
 
-    public void backtrack(List<String> list, String str, int open, int close, int max){
-
+    public void backtrack(List<String> list, StringBuilder str, int open, int close, int max){
         if(str.length() == max*2){
-            list.add(str);
-            return;
+            list.add(str.toString());
+            return; }
+        if(open < max) {
+            backtrack(list, str.append("("), open+1, close, max);
+            str.delete(str.length()-1, str.length());
         }
-
-        if(open < max)
-            backtrack(list, str+"(", open+1, close, max);
-        if(close < open)
-            backtrack(list, str+")", open, close+1, max);
+        if(close < open) {
+            backtrack(list, str.append(")"), open, close+1, max);
+            str.delete(str.length()-1, str.length());
+        }
     }
 
     /**
@@ -270,32 +272,19 @@ public class Backpacking {
      */
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result = new LinkedList<>();
-        if (nums.length==0) return result;
-        int len = nums.length;
-        for (int i = 0; i < Math.pow(2, len); i++) {
-            String tmp = Integer.toBinaryString(i);
-            List<Integer> list = new LinkedList<>();
-//            String ans = "";
-            for (int j = 0; j < tmp.length(); j++) {
-                if (tmp.charAt(tmp.length()-1-j)=='1') list.add(nums[j]);
-            }
-            result.add(list);
-        }
+        result.add(new LinkedList<>());
+        backtrack(result, new LinkedList<Integer>(),nums, 0);
         return result;
     }
-    public List<List<Integer>> subsets2(int[] nums) {
-        List<List<Integer>> list = new ArrayList<>();
-        Arrays.sort(nums);
-        backtrack1(list, new ArrayList<>(), nums, 0);
-        return list;
-    }
 
-    private void backtrack1(List<List<Integer>> list , List<Integer> tempList, int [] nums, int start){
-        list.add(new ArrayList<>(tempList));
-        for(int i = start; i < nums.length; i++){
-            tempList.add(nums[i]);
-            backtrack1(list, tempList, nums, i + 1);
-            tempList.remove(tempList.size() - 1);
+    private void backtrack(List<List<Integer>> result, LinkedList<Integer> list, int[] nums, int i) {
+        if (i==nums.length) return;
+
+        for (int j = i; j < nums.length; j++) {
+            list.add(nums[j]);
+            result.add(new LinkedList<>(list));
+            backtrack(result, list, nums, j+1);
+            list.removeLast();
         }
     }
 
@@ -327,26 +316,38 @@ public class Backpacking {
      * @param word
      * @return
      */
-    public boolean exist(char[][] board, String word) {
-        char[] w = word.toCharArray();
-        for (int y=0; y<board.length; y++) {
-            for (int x=0; x<board[y].length; x++) {
-                if (exist(board, y, x, w, 0)) return true;
+    class Solution {
+        public boolean exist(char[][] board, String word) {
+            boolean[][] used = new boolean[board.length][board[0].length];
+            boolean flag = false;
+            for (int i = 0; i < board.length; i++) {
+                for (int j = 0; j < board[i].length; j++) {
+                    flag = backtrack(board,word,used,i,j,0);
+                    if (flag) return true;
+                }
             }
+            return flag;
         }
-        return false;
-    }
-    private boolean exist(char[][] board, int y, int x, char[] word, int i) {
-        if (i == word.length) return true;
-        if (y<0 || x<0 || y == board.length || x == board[y].length) return false;
-        if (board[y][x] != word[i]) return false;
-        board[y][x] ^= 256;
-        boolean exist = exist(board, y, x+1, word, i+1)
-                || exist(board, y, x-1, word, i+1)
-                || exist(board, y+1, x, word, i+1)
-                || exist(board, y-1, x, word, i+1);
-        board[y][x] ^= 256;
-        return exist;
+
+        private boolean backtrack(char[][] board, String word, boolean[][] used, int startX, int startY, int wordIndex) {
+            if (wordIndex>=word.length()) return true;
+            if (startX<0 || startX>board.length-1 || startY<0 || startY>board[0].length-1) return false;
+
+
+            if (!used[startX][startY]){
+                if (word.charAt(wordIndex)==board[startX][startY]){
+                    used[startX][startY]= true;
+                    boolean left = backtrack(board, word, used, startX-1, startY, wordIndex+1);
+                    boolean right = backtrack(board, word, used, startX+1, startY, wordIndex+1);
+                    boolean up = backtrack(board, word, used, startX, startY+1, wordIndex+1);
+                    boolean down = backtrack(board, word, used, startX, startY-1, wordIndex+1);
+                    if(left || right || up || down) return true;
+                    used[startX][startY]= false;
+                }
+            }
+            return false;
+
+        }
     }
 
     int[][] dir = new int[][]{{0,-1},{1,0},{0,1},{-1,0}};
@@ -421,7 +422,7 @@ public class Backpacking {
 //        String tmp2 = Integer.toBinaryString(7);
 //        System.out.println(tmp2.length());
 //        int[] nums = new int[]{1,2,3};
-        Backpacking bp = new Backpacking();
+        Backtracking bp = new Backtracking();
 //        List<List<Integer>> result=bp.subsets(nums);
         List<String> result = bp.letterCombinations2("23");
     }
