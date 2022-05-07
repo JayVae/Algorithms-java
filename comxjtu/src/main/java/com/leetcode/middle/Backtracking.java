@@ -316,7 +316,6 @@ public class Backtracking {
      * @param word
      * @return
      */
-    class Solution {
         public boolean exist(char[][] board, String word) {
             boolean[][] used = new boolean[board.length][board[0].length];
             boolean flag = false;
@@ -348,7 +347,6 @@ public class Backtracking {
             return false;
 
         }
-    }
 
     int[][] dir = new int[][]{{0,-1},{1,0},{0,1},{-1,0}};
     int m,n;
