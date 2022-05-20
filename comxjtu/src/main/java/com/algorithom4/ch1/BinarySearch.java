@@ -15,7 +15,7 @@ public class BinarySearch {
         while (lo<=hi){
             int mid = lo + (hi-lo)/2;
             if (a[mid]>t) hi = mid - 1;
-            else if (a[mid]<t) hi = mid +1;
+            else if (a[mid]<t) lo = mid +1;
             else  return mid;
         }
         return -1;
@@ -26,7 +26,7 @@ public class BinarySearch {
         while (lo<=hi){
             int mid = lo + (hi-lo)/2;
             if (a[mid]>t) hi = mid - 1;
-            else if (a[mid]<t) hi = mid +1;
+            else if (a[mid]<t) lo = mid +1;
             else  return mid;
         }
         return lo;
