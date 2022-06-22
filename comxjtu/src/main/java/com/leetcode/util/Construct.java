@@ -14,9 +14,9 @@ import java.util.Queue;
 public class Construct {
 
         //tools for reconstruct treenode
-        Queue<TreeNode> queue = new LinkedList<TreeNode>();
-        boolean isLeft = true;
-        TreeNode root = null;
+        public static Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        public static boolean isLeft = true;
+        public static TreeNode root = null;
 
     /**
      *
@@ -25,7 +25,7 @@ public class Construct {
      * @Date 12:13 2022/5/1
      * @return
      **/
-        public String serialize(TreeNode root) {
+        public static String serialize(TreeNode root) {
             StringBuilder builder = new StringBuilder();
             Queue<TreeNode> queue = new LinkedList<>();
             queue.offer(root);
@@ -53,7 +53,7 @@ public class Construct {
      * @Date 12:15 2022/5/1
      * @return
      **/
-        public TreeNode deserialize(String data) {
+        public static TreeNode deserialize(String data) {
             String[] strs = data.split(",");
             int size = strs.length;
 
@@ -70,7 +70,7 @@ public class Construct {
             }
             return root;
         }
-        private void appendNodeToTree(TreeNode node){
+        private static void appendNodeToTree(TreeNode node){
             if(root == null){
                 root = node;
                 queue.offer(node);
