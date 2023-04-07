@@ -4,7 +4,7 @@ package com.leetcode.everyday;
  * @author JS
  * @version 1.0
  * @date 2023/4/6 12:02
- * @description //TODO
+ * @description //lc1017
  */
 public class BaseNeg2 {
     public String baseNeg2(int n) {
