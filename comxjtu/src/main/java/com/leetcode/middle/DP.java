@@ -180,5 +180,36 @@ public class DP {
         }
         return dp[n-1];
     }
+
+    
+    /**
+     * 
+     * @Param 
+     * @Description //1027. 最长等差数列
+     * @Date 10:55 2023/4/22
+     * @return 
+     **/
+    public int longestArithSeqLength(int[] nums) {
+        // dp[i][d]表示以i为结尾的，公差为d的最长等差子序列的长度
+        // 因为0 <= nums[i] <= 500，所以公差的取值范围为[-500, 500]
+        int[][] dp = new int[nums.length][1001];
+        // 初始化
+        for (int i = 0; i < dp.length; i++) {
+            for (int j = 0; j < dp[0].length; j++) {
+                dp[i][j] = 1;
+            }
+        }
+
+        int ans = 0;
+        for (int i = 1; i < nums.length; i++) {
+            // 枚举前边的数作为子序列的上一个数
+            for (int j = 0; j < i; j++) {
+                int d = nums[i] - nums[j] + 500;
+                dp[i][d] = Math.max(dp[i][d], dp[j][d] + 1);
+                ans = Math.max(dp[i][d], ans);
+            }
+        }
+        return ans;
+    }
 }
 
