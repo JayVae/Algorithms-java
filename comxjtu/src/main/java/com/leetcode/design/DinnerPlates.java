@@ -1,10 +1,15 @@
 package com.leetcode.design;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.TreeSet;
+
 /**
  * @author JS
  * @version 1.0
  * @date 2023/4/28 21:11
- * @description //TODO
+ * @description //1172 餐盘栈
  */
 class DinnerPlates {
     int capacity;
