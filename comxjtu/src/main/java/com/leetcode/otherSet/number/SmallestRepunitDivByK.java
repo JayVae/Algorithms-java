@@ -1,4 +1,4 @@
-package com.leetcode.everyday;
+package com.leetcode.otherSet.number;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
@@ -9,9 +9,7 @@ import java.util.Set;
  * @version 1.0
  * @date 2023/5/10 9:44
  * @description //1015. 可被 K 整除的最小整数
- * 在模运算中，经常会用到两个等式
- * (a+b)%m = (a%m+b%m)%m
- * (a*b)%m = ((a%m)*(b%m))%m
+
  */
 public class SmallestRepunitDivByK {
     public int smallestRepunitDivByK(int k) {
