@@ -4,9 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Test {
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
 
     /**
      *
@@ -42,6 +39,25 @@ public class Test {
         }
         return maxRows;
     }
+
+     void testWithFiveExamples(){
+            int[][] matrix = {{0,1},{1,1}};
+        int[][] matrix1 = {{0,1},{1,0}};
+        int[][] matrix2 = {{0,0,0},{0,0,1},{1,1,0}};
+        int[][] matrix3 = {{1,0,0,0,1,1,1,0,1,1,1},{1,0,0,0,1,0,0,0,1,0,0},{1,0,0,0,1,1,1,0,1,1,1},{1,0,0,0,1,0,0,0,1,0,0},{1,1,1,0,1,1,1,0,1,1,1}};
+        int[][] matrix4 = {{0,0,0,0,1,1,1},{0,0,0,0,1,0,1},{1,1,1,0,1,1,1},{0,0,0,0,1,0,0},{0,0,1,0,1,0,0},{0,1,1,0,1,0,0},{0,0,0,0,1,1,1},{0,0,0,0,1,0,0},{0,0,0,0,1,0,0},{0,0,0,0,1,0,0}};
+        System.out.println(maxEqualRowsAfterFlips(matrix));
+        System.out.println(maxEqualRowsAfterFlips(matrix1));
+        System.out.println(maxEqualRowsAfterFlips(matrix2));
+        System.out.println(maxEqualRowsAfterFlips(matrix3));
+        System.out.println(maxEqualRowsAfterFlips(matrix4));
+    }
+
+    public static void main(String[] args) {
+        Test test = new Test();
+        test.testWithFiveExamples();
+    }
+
 
 
 }
