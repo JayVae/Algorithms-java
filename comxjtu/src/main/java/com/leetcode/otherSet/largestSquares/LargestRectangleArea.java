@@ -8,6 +8,7 @@ import java.util.Deque;
  * @version 1.0
  * @date 2023/4/20 12:46
  * @description //84. 柱状图中最大的矩形
+ * 单调栈
  */
 public class LargestRectangleArea {
     public int largestRectangleArea(int[] heights) {

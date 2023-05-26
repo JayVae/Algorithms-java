@@ -8,6 +8,7 @@ import java.util.LinkedList;
  * @version 1.0
  * @date 2023/4/20 12:48
  * @description //42. 接雨水
+ * 单调栈或者双指针
  */
 public class Trap {
     public int trap(int[] height) {

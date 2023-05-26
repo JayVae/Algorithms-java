@@ -8,6 +8,7 @@ import java.util.LinkedList;
  * @version 1.0
  * @date 2023/4/20 12:44
  * @description //85. 最大矩形
+ * 单调栈
  */
 public class MaximalRectangle {
     public int maximalRectangle(char[][] matrix) {
