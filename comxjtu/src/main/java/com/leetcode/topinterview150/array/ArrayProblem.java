@@ -279,8 +279,114 @@ public class ArrayProblem {
         return h;
     }
 
+    public double[] sampleStats(int[] count) {
+        double[] ans = new double[5];
+        int cntSum = 0;
+        double cntMax = 0.0;
+        long sum = 0;
+        ans[0] = Integer.MAX_VALUE;
+
+        for (int i = 0; i < 256; i++) {
+            if (count[i]!=0){
+                ans[0] = Math.min(ans[0], i);
+                ans[1] = Math.max(ans[1], i);
+                ans[2] += (double) i*count[i];
+                sum += (long)i*count[i];
+                cntSum += count[i];
+                if (count[i]>cntMax) {
+                    ans[4] = i;
+                    cntMax = count[i];
+                }
+            }
+
+        }
+        int left = (cntSum + 1) / 2;
+        int right = (cntSum + 2) / 2;
+        int cnt=0;
+        for (int i = 0; i < 256; i++) {
+            if (cnt < right && cnt + count[i] >= right) {
+                ans[3] += i;
+            }
+            if (cnt < left && cnt + count[i] >= left) {
+                ans[3] += i;
+            }
+            cnt += count[i];
+        }
+        ans[2] = ans[2]/cntSum;
+        ans[2] = (double)sum/cntSum;
+        ans[3] = ans[3]/2.0;
+        return ans;
+    }
+
+
+    /**
+     *
+     * @Param
+     * @Description //除自身以外数组的乘积：左右乘积列表，前缀和后缀
+     * @Date 11:34 2023/5/27
+     * @return
+     **/
+    public int[] productExceptSelf(int[] nums) {
+        int length = nums.length;
+
+        // L 和 R 分别表示左右两侧的乘积列表
+        int[] L = new int[length];
+        int[] R = new int[length];
+
+        int[] answer = new int[length];
+
+        // L[i] 为索引 i 左侧所有元素的乘积
+        // 对于索引为 '0' 的元素，因为左侧没有元素，所以 L[0] = 1
+        L[0] = 1;
+        for (int i = 1; i < length; i++) {
+            L[i] = nums[i - 1] * L[i - 1];
+        }
+
+        // R[i] 为索引 i 右侧所有元素的乘积
+        // 对于索引为 'length-1' 的元素，因为右侧没有元素，所以 R[length-1] = 1
+        R[length - 1] = 1;
+        for (int i = length - 2; i >= 0; i--) {
+            R[i] = nums[i + 1] * R[i + 1];
+        }
+
+        // 对于索引 i，除 nums[i] 之外其余各元素的乘积就是左侧所有元素的乘积乘以右侧所有元素的乘积
+        for (int i = 0; i < length; i++) {
+            answer[i] = L[i] * R[i];
+        }
+
+        return answer;
+    }
+
+    public int canCompleteCircuit(int[] gas, int[] cost) {
+        int n = gas.length;
+//        int[][] dp = new int[][]{};
+        int sum=0;
+        for (int i = 0; i < n; i++) {
+            sum+=gas[i]-cost[i];
+        }
+        if (sum<0) return -1;
+        for (int i = 0; i < n; i++) {
+            int cur = gas[i];
+            for (int j = 1; j <= n; j++) {
+                int nextIndex = (i+j)%n;
+                int curIndex = (i+j-1)%n;
+                if (cur>=cost[curIndex]){
+                    cur = cur - cost[curIndex] + gas[nextIndex];
+                }else{
+                    break;
+                }
+                if (j==n) return i;
+            }
+        }
+        return -1;
+    }
+
     public static void main(String[] args) {
         ArrayProblem solver = new ArrayProblem();
+        System.out.println("long:"+Long.MAX_VALUE);
 
+        System.out.println("float:"+Float.MAX_VALUE);
+
+        System.out.println("double:"+Double.MAX_VALUE);
     }
 }
