@@ -357,25 +357,26 @@ public class ArrayProblem {
         return answer;
     }
 
+//    134. 加油站
     public int canCompleteCircuit(int[] gas, int[] cost) {
         int n = gas.length;
-//        int[][] dp = new int[][]{};
-        int sum=0;
-        for (int i = 0; i < n; i++) {
-            sum+=gas[i]-cost[i];
-        }
-        if (sum<0) return -1;
-        for (int i = 0; i < n; i++) {
-            int cur = gas[i];
-            for (int j = 1; j <= n; j++) {
-                int nextIndex = (i+j)%n;
-                int curIndex = (i+j-1)%n;
-                if (cur>=cost[curIndex]){
-                    cur = cur - cost[curIndex] + gas[nextIndex];
-                }else{
+        int i = 0;
+        while (i < n) {
+            int sumOfGas = 0, sumOfCost = 0;
+            int cnt = 0;
+            while (cnt < n) {
+                int j = (i + cnt) % n;
+                sumOfGas += gas[j];
+                sumOfCost += cost[j];
+                if (sumOfCost > sumOfGas) {
                     break;
                 }
-                if (j==n) return i;
+                cnt++;
+            }
+            if (cnt == n) {
+                return i;
+            } else {
+                i = i + cnt + 1;
             }
         }
         return -1;
