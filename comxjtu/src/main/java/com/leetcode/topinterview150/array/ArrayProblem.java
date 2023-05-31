@@ -11,6 +11,7 @@ import java.util.Stack;
  * @date 2023/5/26 10:12
  * @description //数组/字符串问题
  * 来源：https://leetcode.cn/studyplan/top-interview-150/
+ * 数组相关的算法：前缀和、二分查找、双指针、滑动窗口、动态规划
  */
 public class ArrayProblem {
     /**
