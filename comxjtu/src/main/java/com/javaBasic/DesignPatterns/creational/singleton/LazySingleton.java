@@ -7,7 +7,7 @@ import java.lang.reflect.InvocationTargetException;
 /**
  * Created by js
  */
-public class LazySingleton {
+public class LazySingleton implements Cloneable{
     private static LazySingleton lazySingleton = null;
     private LazySingleton(){
         if(lazySingleton != null){
@@ -21,19 +21,28 @@ public class LazySingleton {
         return lazySingleton;
     }
 
-    public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return getInstance();
+    }
+
+    public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException, CloneNotSupportedException {
         Class objectClass = LazySingleton.class;
         Constructor c = objectClass.getDeclaredConstructor();
         c.setAccessible(true);
 
         System.out.println(c);
         LazySingleton o2 = (LazySingleton) c.newInstance();
+        LazySingleton o3 = new LazySingleton();
         LazySingleton o1 = LazySingleton.getInstance();
-
 
         System.out.println(o1);
         System.out.println(o2);
         System.out.println(o1==o2);
+        System.out.println(o3);
+
+        LazySingleton o4 = (LazySingleton) o1.clone();
+        System.out.println(o4);
     }
 
 }
