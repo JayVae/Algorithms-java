@@ -45,6 +45,26 @@ public class A {
     }
 
     public static void main(String[] args) {
-        new A().solve();
+//        new A().solve();
+        new A().test("1");
+    }
+
+    private void test(String number) {
+        test2(1);
+        try{
+            int ans = 0;
+            ans = 10/0;
+        }catch (ArithmeticException e){
+            throw new ArithmeticException();
+        }finally {
+            System.out.println(number);
+        }
+    }
+
+    private void test2(int i) throws ArithmeticException{
+            int ans = 0;
+            ans = 10/0;
+            System.out.println("end");
+            System.out.println("test2");
     }
 }
