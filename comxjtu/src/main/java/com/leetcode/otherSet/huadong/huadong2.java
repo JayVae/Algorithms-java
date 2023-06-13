@@ -1,9 +1,6 @@
 package com.leetcode.otherSet.huadong;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author JS
@@ -62,7 +59,37 @@ public class huadong2 {
     * todo
     * */
     public List<Integer> findAnagrams(String s, String p) {
+        int n = s.length();
+        List<Integer> ansList = new ArrayList<>();
+        if (n<p.length()) return ansList;
 
+        Map<Character, Integer> map = new HashMap<>();
+        for (char c : p.toCharArray()) {
+            map.merge(c, 1, Integer::sum);
+        }
+        Map<Character, Integer> count = new HashMap<>();
+
+        int left = 0, right = 0;
+        while (right<n){
+            Character ch = s.charAt(right);
+            count.merge(ch,1, Integer::sum);
+
+            if (right-left+1>p.length()){
+                count.merge(s.charAt(left),-1, Integer::sum);
+                left++;
+            }
+            if (right-left+1==p.length()){
+                boolean flag = true;
+                for (Character character : map.keySet()) {
+//                    易错：
+                    if (!map.get(character).equals(count.getOrDefault(character,0))) flag=false;
+                }
+                if (flag) ansList.add(left);
+            }
+            right++;
+        }
+
+        return ansList;
     }
 
     public static void main(String[] args) {
