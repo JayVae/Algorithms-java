@@ -81,6 +81,7 @@ public class weiyunsuan {
     }
 /*
 201. 数字范围按位与
+题目描述：给你两个整数 left 和 right ，表示区间 [left, right] ，返回此区间内所有数字 按位与 的结果（包含 left 、right 端点）。
 *  这个问题的实质：给定两个整数，我们要找到它们对应的二进制字符串的公共前缀。
 两种方法：（1）位移
 （2）Brian Kernighan 算法  ，利用 n=n & (n - 1)抹去最低位的1

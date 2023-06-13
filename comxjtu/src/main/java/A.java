@@ -46,7 +46,28 @@ public class A {
 
     public static void main(String[] args) {
 //        new A().solve();
-        new A().test("1");
+//        new A().test("1");
+        // 第一个字符串常量，存储在方法区的字符串常量池中。
+        String str1 = "world";
+
+        // 使用 new 关键字创建的字符串对象，存储在堆内存中。
+        String str2 = new String("world");
+
+        // 调用 intern() 方法创建字符串常量，存储在运行时常量池中。
+        String str3 = str2.intern();
+
+        String str4 = new String("world");
+        String str5 = "world";
+
+        System.out.println(str1);
+        System.out.println(str2);
+        System.out.println(str3);
+        System.out.println(str4);
+        System.out.println("str1 address: " + System.identityHashCode(str1));
+        System.out.println("str2 address: " + System.identityHashCode(str2));
+        System.out.println("str3 address: " + System.identityHashCode(str3));
+        System.out.println("str3 address: " + System.identityHashCode(str4));
+        System.out.println("str3 address: " + System.identityHashCode(str5));
     }
 
     private void test(String number) {

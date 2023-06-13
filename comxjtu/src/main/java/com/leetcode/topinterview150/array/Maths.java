@@ -66,7 +66,7 @@ public class Maths {
     }
 /*
 * 172. 阶乘后的零
-* 看阶乘式子中有几个5的倍数即可；因为每一个5范围内都会有一个偶数与其相乘得到10；
+* 看阶乘式子中有几个5的倍数即可；因为每一个5的范围内都会有一个偶数与其相乘得到10；
 * */
     public int trailingZeroes(int n) {
         int ans = 0;
@@ -96,7 +96,7 @@ public class Maths {
                 l = mid+1;
             }
         }
-//        l可能是答案
+//        mid可能是答案
         return l-1;
     }
 
@@ -132,7 +132,7 @@ public class Maths {
             if (ret >= n - i || ret > n / 2) {
                 break;
             }
-            Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+            Map<Integer, Integer> map = new HashMap<>();
             for (int j = i + 1; j < n; j++) {
                 int x = points[i][0] - points[j][0];
                 int y = points[i][1] - points[j][1];
