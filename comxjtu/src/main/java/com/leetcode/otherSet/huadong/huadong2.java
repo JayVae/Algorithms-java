@@ -82,6 +82,7 @@ public class huadong2 {
                 boolean flag = true;
                 for (Character character : map.keySet()) {
 //                    易错：
+
                     if (!map.get(character).equals(count.getOrDefault(character,0))) flag=false;
                 }
                 if (flag) ansList.add(left);
